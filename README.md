@@ -9,7 +9,7 @@ Portions Copyright (c) 2014-2018, The Monero Project
 - Web: [sevabit.network](https://sevabit.network)
 - Telegram: [t.me/SevaBitCommunity](https://t.me/SevaBitCommunity)
 - Mail: [team@sevabit.network](mailto:team@sevabit.network)
-- GitHub: [https://gitlab.com/Sevabit/SevaBit](https://gitlab.com/Sevabit/SevaBit)
+- GitHub: [https://github.com/Sevabit/SevaBit](https://github.com/Sevabit/SevaBit)
 - Discord: [https://discord.gg/67GXfD6](https://discord.gg/67GXfD6)
 
 ## Introduction
@@ -22,7 +22,7 @@ SevaBit is an open source project, and we encourage contributions from anyone wi
 
 ## About this project
 
-This is the GUI for the [SevaBit implementation](https://gitlab.com/Sevabit/SevaBit). It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of SevaBit that uses the protocol and network in a compatible manner.
+This is the GUI for the [SevaBit implementation](https://github.com/Sevabit/SevaBit). It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of SevaBit that uses the protocol and network in a compatible manner.
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
@@ -69,7 +69,7 @@ As with many development projects, the repository on Github is considered to be 
 
 3. Clone repository
 
-    `git clone https://gitlab.com/Sevabit/SevaBit-gui.git`
+    `git clone https://github.com/Sevabit/SevaBit-gui.git`
 
 4. Build
 
@@ -87,7 +87,7 @@ The executable can be found in the build/release/bin folder.
 
 2. Install [Homebrew](http://brew.sh/)
 
-3. Install [SevaBit](https://gitlab.com/Sevabit/SevaBit) dependencies:
+3. Install [SevaBit](https://github.com/Sevabit/SevaBit) dependencies:
 
   `brew install boost --c++11`
 
@@ -117,7 +117,7 @@ The executable can be found in the build/release/bin folder.
 
 6. Grab an up-to-date copy of the sevabit-gui repository
 
-  `git clone https://gitlab.com/Sevabit/SevaBit-gui.git`
+  `git clone https://github.com/Sevabit/SevaBit-gui.git`
 
 7. Go into the repository
 
@@ -156,7 +156,7 @@ The SevaBit GUI on Windows is 64 bits only; 32-bit Windows GUI builds are not of
     pacman -S mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium mingw-w64-x86_64-hidapi
     ```
 
-    You find more details about those dependencies in the [SevaBit documentation](https://gitlab.com/Sevabit/SevaBit). Note that that there is no more need to compile Boost from source; like everything else, you can install it now with a MSYS2 package.
+    You find more details about those dependencies in the [SevaBit documentation](https://github.com/Sevabit/SevaBit). Note that that there is no more need to compile Boost from source; like everything else, you can install it now with a MSYS2 package.
 
 4. Install Qt5
 
@@ -182,7 +182,7 @@ The SevaBit GUI on Windows is 64 bits only; 32-bit Windows GUI builds are not of
 
     ```
     cd
-    git clone https://gitlab.com/Sevabit/SevaBit-gui.git
+    git clone https://github.com/Sevabit/SevaBit-gui.git
     ```
 
 7. Build
