@@ -6,9 +6,9 @@ Portions Copyright (c) 2014-2018, The Monero Project
 
 ## Development resources
 
-- Web: [sevabit.network](https://sevabit.network)
-- Telegram: [t.me/SevaBitCommunity](https://t.me/SevaBitCommunity)
-- Mail: [team@sevabit.network](mailto:team@sevabit.network)
+- Web: [sevabit.com](https://sevabit.network)
+- Telegram: [t.me/SevaBit](https://t.me/SevaBitCommunity)
+- Mail: [admin@sevabit.com](mailto:team@sevabit.network)
 - GitHub: [https://github.com/Sevabit/SevaBit](https://github.com/Sevabit/SevaBit)
 - Discord: [https://discord.gg/67GXfD6](https://discord.gg/67GXfD6)
 
@@ -18,7 +18,7 @@ SevaBit is a private cryptocurrency based on Monero. Over the course of the comi
 
 More information on the project can be found on the website and in the whitepaper.
 
-SevaBit is an open source project, and we encourage contributions from anyone with something to offer. For more information on contributing, please contact team@sevabit.network
+SevaBit is an open source project, and we encourage contributions from anyone with something to offer. For more information on contributing, please contact admin@sevabit.com
 
 ## About this project
 
