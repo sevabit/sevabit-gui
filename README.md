@@ -6,9 +6,9 @@ Portions Copyright (c) 2014-2018, The Monero Project
 
 ## Development resources
 
-- Web: [sevabit.com](https://sevabit.network)
-- Telegram: [t.me/SevaBit](https://t.me/SevaBitCommunity)
-- Mail: [admin@sevabit.com](mailto:team@sevabit.network)
+- Web: [sevabit.com](https://sevabit.com)
+- Telegram: [t.me/SevaBit](https://t.me/SevaBit)
+- Mail: [admin@sevabit.com](mailto:admin@sevabit.com)
 - GitHub: [https://github.com/Sevabit/SevaBit](https://github.com/Sevabit/SevaBit)
 - Discord: [https://discord.gg/67GXfD6](https://discord.gg/67GXfD6)
 
