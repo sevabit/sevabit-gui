@@ -1,5 +1,5 @@
 #!/bin/bash
-LOKI_URL=https://gitlab.com/Sevabit/SevaBit.git
+SEVABIT_URL=https://gitlab.com/Sevabit/SevaBit.git
 
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -62,14 +62,14 @@ else
     pushd "$SEVABIT_DIR"
     get_tag
     popd
-    echo "latest libwallet version: $GUI_LOKI_VERSION"
+    echo "latest libwallet version: $GUI_SEVABIT_VERSION"
     echo "Installed libwallet version: $VERSIONTAG"
     # check if recent
-    if [ "$VERSIONTAG" != "$GUI_LOKI_VERSION" ]; then
-        echo "Building new libwallet version $GUI_LOKI_VERSION"
+    if [ "$VERSIONTAG" != "$GUI_SEVABIT_VERSION" ]; then
+        echo "Building new libwallet version $GUI_SEVABIT_VERSION"
         BUILD_LIBWALLET=true
     else
-        echo "latest libwallet ($GUI_LOKI_VERSION) is already built. Remove sevabit/lib/libwallet_merged.a to force rebuild"
+        echo "latest libwallet ($GUI_SEVABIT_VERSION) is already built. Remove sevabit/lib/libwallet_merged.a to force rebuild"
     fi
 fi
 
@@ -78,7 +78,7 @@ if [ "$BUILD_LIBWALLET" != true ]; then
     return
 fi
 
-echo "GUI_LOKI_VERSION=\"$VERSIONTAG\"" > $SEVABIT_DIR/version.sh
+echo "GUI_SEVABIT_VERSION=\"$VERSIONTAG\"" > $SEVABIT_DIR/version.sh
 
 ## Continue building libwallet
 
@@ -220,7 +220,7 @@ eval $make_exec  -j$CPU_CORE_COUNT
 eval $make_exec  install -j$CPU_CORE_COUNT
 popd
 
-# Build lokid
+# Build sevabitd
 # win32 need to build daemon manually with msys2 toolchain
 if [ "$platform" != "mingw32" ] && [ "$ANDROID" != true ]; then
     pushd $SEVABIT_DIR/build/$BUILD_TYPE/src/daemon

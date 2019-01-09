@@ -2,8 +2,8 @@ import QtQuick 2.2
 import QtGraphicalEffects 1.0
 import QtQuick.Layouts 1.1
 
-import LokiComponents.Wallet 1.0
-import "../components" as LokiComponents
+import SevabitComponents.Wallet 1.0
+import "../components" as SevabitComponents
 
 // BasicPanel header
 Rectangle {

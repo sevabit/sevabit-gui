@@ -988,7 +988,7 @@
     </message>
     <message>
         <source>Blocks remaining: %1</source>
-        <translation type="vanished">Preostali bloki: %1</translation>
+        <translation type="vanished">Preostali bsevabit: %1</translation>
     </message>
     <message>
         <source>Synchronizing blocks</source>
@@ -3092,7 +3092,7 @@ Velikost obroča: </translation>
     </message>
     <message>
         <source>This address received %1 sevabit, with %2 confirmation(s).</source>
-        <translation type="vanished">Ta naslov je prejel %1 lokiv, s %2 potrditev.</translation>
+        <translation type="vanished">Ta naslov je prejel %1 sevabitv, s %2 potrditev.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="460"/>

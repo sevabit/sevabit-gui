@@ -29,7 +29,7 @@
 
 import QtQuick 2.5
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 Rectangle {
     id: button
@@ -105,7 +105,7 @@ Rectangle {
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: parent.right
             anchors.leftMargin: 8 * scaleRatio
-            font.family: LokiComponents.Style.fontMedium.name
+            font.family: SevabitComponents.Style.fontMedium.name
             font.bold: true
             font.pixelSize: 16 * scaleRatio
             color: "#FFFFFF"

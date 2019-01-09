@@ -763,7 +763,7 @@
     <message>
         <location filename="../pages/Mining.qml" line="82"/>
         <source>Mining with your computer helps strengthen the SevaBit network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some SevaBit. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Louhinta tietokoneellasi auttaa vahvistamaan SevaBit-verkkoa. Mitä enemmän louhitaan, sen vaikeampaa on hyökätä verkkoa vastaan.&lt;br&gt; &lt;br&gt;Louhinta myös mahdollistaa Lokin ansaitsemisen. Tietokoneesi luo tiivisteitä etsien lohkoratkaisua. Jos löydät lohkon, saat siihen kuuluvan palkkion. Onnea! </translation>
+        <translation>Louhinta tietokoneellasi auttaa vahvistamaan SevaBit-verkkoa. Mitä enemmän louhitaan, sen vaikeampaa on hyökätä verkkoa vastaan.&lt;br&gt; &lt;br&gt;Louhinta myös mahdollistaa Sevabitn ansaitsemisen. Tietokoneesi luo tiivisteitä etsien lohkoratkaisua. Jos löydät lohkon, saat siihen kuuluvan palkkion. Onnea! </translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="95"/>
@@ -1146,12 +1146,12 @@
     <message>
         <location filename="../pages/Receive.qml" line="138"/>
         <source>With more SevaBit</source>
-        <translation>Lisää Lokija</translation>
+        <translation>Lisää Sevabitja</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="139"/>
         <source>With not enough SevaBit</source>
-        <translation>Ei riittävästi Lokija</translation>
+        <translation>Ei riittävästi Sevabitja</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="142"/>
@@ -1618,7 +1618,7 @@ The old wallet cache file will be renamed and can be restored later.
     <message>
         <location filename="../pages/settings/SettingsLog.qml" line="68"/>
         <source>Log level</source>
-        <translation>Lokitaso</translation>
+        <translation>Sevabittaso</translation>
     </message>
 <message>
         <location filename="../pages/Settings.qml" line="72"/>
@@ -2116,12 +2116,12 @@ The old wallet cache file will be renamed and can be restored later.
     <message>
         <location filename="../pages/SharedRingDB.qml" line="245"/>
         <source>In order to avoid nullifying the protection afforded by SevaBit&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing SevaBit clone allows you do spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by SevaBit and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing SevaBit clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your SevaBit safely.&lt;br&gt;If you do not use a key-reusing SevaBit clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>Jotta Lokin rengasallekirjoitusten tarjoama suoja ei vaarannu, lähtöä ei tulisi kuluttaa eri renkaissa eri lohkoketjuissa. Tämä ei ole tavallisesti huolenaihe, mutta avaimia uudelleenkäyttävissä SevaBit-klooneissa näin voi olla. Tässä tapauksessa on varmistettu olemassaolevian lähtöjen käyttävän samaa rengasta molemmissa ketjuissa.&lt;br&gt;Tämä tapahtuu automaattisesti Lokin toimesta ja minkä tahansa avaimia uudelleenkäyttävän ohjelmiston joka ei yritä murtaa yksityisyyttäsi.&lt;br&gt;Jos käytät myös avaimia uudelleenkäyttävää SevaBit-kloonia, ja tämä klooni ei tarjoa tätä suojausta, voit silti varmistua että siirtosi ovat suojattuja kuluttamalla kloonin ensin, ja sitten käsin lisäämällä renkaan tälle sivulle, joka mahdollistaa sinun kuluttaa Lokisi turvallisesti.&lt;br&gt;Jos et käytä avaimia uudelleenkäyttävää SevaBit-kloonia ilman näitä suojamekanismeja, silloin sinun ei tarvitse tehdä mitään koska kaikki on automatisoitu.&lt;br&gt;</translation>
+        <translation>Jotta Sevabitn rengasallekirjoitusten tarjoama suoja ei vaarannu, lähtöä ei tulisi kuluttaa eri renkaissa eri lohkoketjuissa. Tämä ei ole tavallisesti huolenaihe, mutta avaimia uudelleenkäyttävissä SevaBit-klooneissa näin voi olla. Tässä tapauksessa on varmistettu olemassaolevian lähtöjen käyttävän samaa rengasta molemmissa ketjuissa.&lt;br&gt;Tämä tapahtuu automaattisesti Sevabitn toimesta ja minkä tahansa avaimia uudelleenkäyttävän ohjelmiston joka ei yritä murtaa yksityisyyttäsi.&lt;br&gt;Jos käytät myös avaimia uudelleenkäyttävää SevaBit-kloonia, ja tämä klooni ei tarjoa tätä suojausta, voit silti varmistua että siirtosi ovat suojattuja kuluttamalla kloonin ensin, ja sitten käsin lisäämällä renkaan tälle sivulle, joka mahdollistaa sinun kuluttaa Sevabitsi turvallisesti.&lt;br&gt;Jos et käytä avaimia uudelleenkäyttävää SevaBit-kloonia ilman näitä suojamekanismeja, silloin sinun ei tarvitse tehdä mitään koska kaikki on automatisoitu.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="267"/>
         <source>This records rings used by outputs spent on SevaBit on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>Tämä tallentaa renkaat joiden lähdöt on kulutettu Lokion avaimia uudelleenkäyttävään lohkoon, joten sama rengas voidaan uudelleenkäyttää ja näin välttää yksityisyyden ongelmat.</translation>
+        <translation>Tämä tallentaa renkaat joiden lähdöt on kulutettu Sevabiton avaimia uudelleenkäyttävään lohkoon, joten sama rengas voidaan uudelleenkäyttää ja näin välttää yksityisyyden ongelmat.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="296"/>
@@ -2948,7 +2948,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="79"/>
         <source>We’re almost there - let’s just configure some SevaBit preferences</source>
-        <translation>Melkein valmista - konfiguroidaan joitain Lokin asetuksia</translation>
+        <translation>Melkein valmista - konfiguroidaan joitain Sevabitn asetuksia</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="97"/>
@@ -2982,7 +2982,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular SevaBit instance. However, storing the full blockchain is beneficial to the security of the SevaBit network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
-        <translation type="vanished">Levynsäilytystilaa käytettäessä lompakko käyttää vähemmän tilaa levyllä, mutta saman verran kaistanleveyttä kuin normaalissa tilassa. On suositeltavaa säilyttää koko lohkoketjua Lokin verkon turvaallisudeksi. Jos olet laitteella, jolla ei olisi tarpeeksi tilaa koko lohkoketjulle, tämä vaihtoehto on sopiva. </translation>
+        <translation type="vanished">Levynsäilytystilaa käytettäessä lompakko käyttää vähemmän tilaa levyllä, mutta saman verran kaistanleveyttä kuin normaalissa tilassa. On suositeltavaa säilyttää koko lohkoketjua Sevabitn verkon turvaallisudeksi. Jos olet laitteella, jolla ei olisi tarpeeksi tilaa koko lohkoketjulle, tämä vaihtoehto on sopiva. </translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="140"/>
@@ -2997,7 +2997,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="169"/>
         <source>Mining secures the SevaBit network, and also pays a small reward for the work done. This option will let SevaBit mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Louhinta suojaa SevaBit-verkkoa, ja myös maksaa pienen palkkion tehdystä työstä. Tämä valinta sallii Lokin louhinnan kun tietokoneesi on verkkovirrassa ja käyttämättömänä. Louhinta pysähtyy kun jatkat käyttämistä.</translation>
+        <translation>Louhinta suojaa SevaBit-verkkoa, ja myös maksaa pienen palkkion tehdystä työstä. Tämä valinta sallii Sevabitn louhinnan kun tietokoneesi on verkkovirrassa ja käyttämättömänä. Louhinta pysähtyy kun jatkat käyttämistä.</translation>
     </message>
 </context>
 <context>
@@ -3072,7 +3072,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardDonation.qml" line="93"/>
         <source>SevaBit development is solely supported by donations</source>
-        <translation>Lokin kehitys on täysin lahjoitusten varassa</translation>
+        <translation>Sevabitn kehitys on täysin lahjoitusten varassa</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="114"/>
@@ -3097,7 +3097,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
         <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support SevaBit development. For instance, a 50% autodonation take a transaction fee of 0.005 XMR and add a 0.0025 XMR to support SevaBit development.</source>
-        <translation>Jokaisen siirron yhteydessä veloitetaan pieni siirtokulu. Voit lisäksi tukea Lokin kehitystä valitsemalla tässä lisäsumman (prosenttiosuutena siirtokulusta). Esimerkiksi 50% automaattilahjoitus lahjoittaa 0.0025 XMR siirtokulun ollessa 0.005 XMR.</translation>
+        <translation>Jokaisen siirron yhteydessä veloitetaan pieni siirtokulu. Voit lisäksi tukea Sevabitn kehitystä valitsemalla tässä lisäsumman (prosenttiosuutena siirtokulusta). Esimerkiksi 50% automaattilahjoitus lahjoittaa 0.0025 XMR siirtokulun ollessa 0.005 XMR.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="175"/>
@@ -3107,7 +3107,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardDonation.qml" line="190"/>
         <source>Mining secures the SevaBit network, and also pays a small reward for the work done. This option will let SevaBit mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Louhinta suojaa SevaBit-verkkoa, ja myös maksaa pienen palkkion tehdystä työstä. Tämä valinta sallii Lokin louhinnan kun tietokoneesi on verkkovirrassa ja käyttämättömänä. Louhinta pysähtyy kun jatkat käyttämistä.</translation>
+        <translation>Louhinta suojaa SevaBit-verkkoa, ja myös maksaa pienen palkkion tehdystä työstä. Tämä valinta sallii Sevabitn louhinnan kun tietokoneesi on verkkovirrassa ja käyttämättömänä. Louhinta pysähtyy kun jatkat käyttämistä.</translation>
     </message>
 </context>
 <context>
@@ -3325,7 +3325,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardOptions.qml" line="75"/>
         <source>Welcome to SevaBit!</source>
-        <translation>Tervetuloa Lokion!</translation>
+        <translation>Tervetuloa Sevabiton!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="87"/>
@@ -3410,7 +3410,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="73"/>
         <source>Welcome to SevaBit!</source>
-        <translation>Tervetuloa Lokion!</translation>
+        <translation>Tervetuloa Sevabiton!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="81"/>
@@ -3476,7 +3476,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../main.qml" line="534"/>
         <source>Please check your wallet and daemon log for errors. You can also try to start %1 manually.</source>
-        <translation>Etsi lompakkosi ja daemonin lokitiedostoista virheitä. Voi myös yrittää käynnistää %1 manuaalisesti.</translation>
+        <translation>Etsi lompakkosi ja daemonin sevabittiedostoista virheitä. Voi myös yrittää käynnistää %1 manuaalisesti.</translation>
     </message>
     <message>
         <source>Can&apos;t create transaction: Wrong daemon version: </source>

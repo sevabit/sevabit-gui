@@ -30,7 +30,7 @@
 import QtQuick 2.5
 import QtQuick.Layouts 1.1
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 Item {
     id: item
@@ -40,7 +40,7 @@ Item {
     property string tipText: ""
     property int fontSize: 16 * scaleRatio
     property bool fontBold: false
-    property string fontColor: LokiComponents.Style.defaultFontColor
+    property string fontColor: SevabitComponents.Style.defaultFontColor
     property string fontFamily: ""
     property alias wrapMode: label.wrapMode
     property alias horizontalAlignment: label.horizontalAlignment
@@ -59,7 +59,7 @@ Item {
             if(fontFamily){
                 return fontFamily;
             } else {
-                return LokiComponents.Style.fontRegular.name;
+                return SevabitComponents.Style.fontRegular.name;
             }
         }
         font.pixelSize: fontSize

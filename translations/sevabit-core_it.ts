@@ -1085,12 +1085,12 @@
     <message>
         <location filename="../pages/Receive.qml" line="138"/>
         <source>With more SevaBit</source>
-        <translation>Con più Lokij</translation>
+        <translation>Con più Sevabitj</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="139"/>
         <source>With not enough SevaBit</source>
-        <translation>Con una quantità insufficiente di Lokij</translation>
+        <translation>Con una quantità insufficiente di Sevabitj</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="142"/>
@@ -1939,7 +1939,7 @@ La vecchia cache del portafoglio verrà rinominata e potrà essere ripristinata 
     <message>
         <location filename="../pages/SharedRingDB.qml" line="245"/>
         <source>In order to avoid nullifying the protection afforded by SevaBit&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing SevaBit clone allows you do spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by SevaBit and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing SevaBit clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your SevaBit safely.&lt;br&gt;If you do not use a key-reusing SevaBit clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>Al fine di mantenere intatta la protezione offerta dalle firme ad anello di SevaBit, un output non dovrebbe essere speso con anelli diversi su differenti blockchain. Sebbene normalmente questo non costituisca un problema, potrebbe diventarlo nel caso in cui un clone di SevaBit che riusa le chiavi ti consenta di spendere output esistenti. In questo caso, è necessario assicurarsi che gli output esistenti usino lo stesso anello su entrambe le blockchain.&lt;br&gt;Questo sarà fatto automaticamente da SevaBit e da ogni software che si basa sul riuso delle chiavi e che non sta tentando appositamente di ledere la tua privacy.&lt;br&gt;Se stai utilizzando un clone di SevaBit basato sul riuso delle chiavi e che non include tale protezione, puoi ancora essere certo che le tue transazioni sono protette spendendo prima sul clone e successivamente aggiungendo a mano l&apos;anello su questa pagina; questa procedura ti consentirà di spendere i tuoi Lokij in modo sicuro.&lt;br&gt;Se utilizzi un clone di SevaBit che offre questa funzionalità di sicurezza, non hai bisogno di fare nulla poiché è tutto automatizzato.&lt;br&gt;</translation>
+        <translation>Al fine di mantenere intatta la protezione offerta dalle firme ad anello di SevaBit, un output non dovrebbe essere speso con anelli diversi su differenti blockchain. Sebbene normalmente questo non costituisca un problema, potrebbe diventarlo nel caso in cui un clone di SevaBit che riusa le chiavi ti consenta di spendere output esistenti. In questo caso, è necessario assicurarsi che gli output esistenti usino lo stesso anello su entrambe le blockchain.&lt;br&gt;Questo sarà fatto automaticamente da SevaBit e da ogni software che si basa sul riuso delle chiavi e che non sta tentando appositamente di ledere la tua privacy.&lt;br&gt;Se stai utilizzando un clone di SevaBit basato sul riuso delle chiavi e che non include tale protezione, puoi ancora essere certo che le tue transazioni sono protette spendendo prima sul clone e successivamente aggiungendo a mano l&apos;anello su questa pagina; questa procedura ti consentirà di spendere i tuoi Sevabitj in modo sicuro.&lt;br&gt;Se utilizzi un clone di SevaBit che offre questa funzionalità di sicurezza, non hai bisogno di fare nulla poiché è tutto automatizzato.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="267"/>
@@ -2318,7 +2318,7 @@ La vecchia cache del portafoglio verrà rinominata e potrà essere ripristinata 
     <message>
         <location filename="../pages/Transfer.qml" line="622"/>
         <source>SevaBit sent successfully</source>
-        <translation>Lokij inviati con successo</translation>
+        <translation>Sevabitj inviati con successo</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="586"/>
@@ -3601,7 +3601,7 @@ Fee: </source>
     <message>
         <location filename="../main.qml" line="788"/>
         <source>SevaBit sent successfully: %1 transaction(s) </source>
-<translation>Lokij inviati con successo: %1 transazione/i</translation>
+<translation>Sevabitj inviati con successo: %1 transazione/i</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1259"/>

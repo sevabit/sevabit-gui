@@ -38,7 +38,7 @@ import "../js/Utils.js" as Utils
 
 
 import "../components"
-import LokiComponents.Clipboard 1.0
+import SevabitComponents.Clipboard 1.0
 
 Rectangle {
     property bool viewOnly: false
@@ -571,7 +571,7 @@ Rectangle {
             }
 
             TextBlock {
-                id: guiLokiVersion
+                id: guiSevabitVersion
                 font.pixelSize: 14
                 text: qsTr("Embedded SevaBit version: ") + translationManager.emptyString
             }
@@ -579,7 +579,7 @@ Rectangle {
             TextBlock {
                 font.pixelSize: 14
                 font.bold: true
-                text: Version.GUI_LOKI_VERSION + translationManager.emptyString
+                text: Version.GUI_SEVABIT_VERSION + translationManager.emptyString
             }
 
             TextBlock {

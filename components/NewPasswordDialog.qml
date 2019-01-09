@@ -34,7 +34,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Window 2.0
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 Item {
     id: root
@@ -101,9 +101,9 @@ Item {
                 Layout.fillWidth: true
 
                 font.pixelSize: 16 * scaleRatio
-                font.family: LokiComponents.Style.fontLight.name
+                font.family: SevabitComponents.Style.fontLight.name
 
-                color: LokiComponents.Style.defaultFontColor
+                color: SevabitComponents.Style.defaultFontColor
             }
 
             TextField {
@@ -113,13 +113,13 @@ Item {
                 anchors.left: parent.left
                 horizontalAlignment: TextInput.AlignLeft
                 verticalAlignment: TextInput.AlignVCenter
-                font.family: LokiComponents.Style.fontLight.name
+                font.family: SevabitComponents.Style.fontLight.name
                 font.pixelSize: 24 * scaleRatio
                 echoMode: TextInput.Password
                 bottomPadding: 10
                 leftPadding: 10
                 topPadding: 10
-                color: LokiComponents.Style.defaultFontColor
+                color: SevabitComponents.Style.defaultFontColor
                 KeyNavigation.tab: passwordInput2
 
                 background: Rectangle {
@@ -159,9 +159,9 @@ Item {
                 Layout.fillWidth: true
 
                 font.pixelSize: 16 * scaleRatio
-                font.family: LokiComponents.Style.fontLight.name
+                font.family: SevabitComponents.Style.fontLight.name
 
-                color: LokiComponents.Style.defaultFontColor
+                color: SevabitComponents.Style.defaultFontColor
             }
 
             TextField {
@@ -171,14 +171,14 @@ Item {
                 anchors.left: parent.left
                 horizontalAlignment: TextInput.AlignLeft
                 verticalAlignment: TextInput.AlignVCenter
-                font.family: LokiComponents.Style.fontLight.name
+                font.family: SevabitComponents.Style.fontLight.name
                 font.pixelSize: 24 * scaleRatio
                 echoMode: TextInput.Password
                 KeyNavigation.tab: okButton
                 bottomPadding: 10
                 leftPadding: 10
                 topPadding: 10
-                color: LokiComponents.Style.defaultFontColor
+                color: SevabitComponents.Style.defaultFontColor
 
                 background: Rectangle {
                     radius: 2
@@ -224,7 +224,7 @@ Item {
                 Layout.topMargin: 16
                 Layout.alignment: Qt.AlignRight
 
-                LokiComponents.StandardButton {
+                SevabitComponents.StandardButton {
                     id: cancelButton
                     text: qsTr("Cancel") + translationManager.emptyString
                     KeyNavigation.tab: passwordInput1
@@ -233,7 +233,7 @@ Item {
                         root.rejected()
                     }
                 }
-                LokiComponents.StandardButton {
+                SevabitComponents.StandardButton {
                     id: okButton
                     text: qsTr("Continue")
                     KeyNavigation.tab: cancelButton

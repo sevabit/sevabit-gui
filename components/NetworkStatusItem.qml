@@ -30,8 +30,8 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import LokiComponents.Wallet 1.0
-import "../components" as LokiComponents
+import SevabitComponents.Wallet 1.0
+import "../components" as SevabitComponents
 
 Rectangle {
     id: item
@@ -95,7 +95,7 @@ Rectangle {
                 anchors.left: parent.left
                 anchors.top: parent.top
                 anchors.topMargin: 0
-                font.family: LokiComponents.Style.fontMedium.name
+                font.family: SevabitComponents.Style.fontMedium.name
                 font.bold: true
                 font.pixelSize: 13 * scaleRatio
                 color: "white"
@@ -108,7 +108,7 @@ Rectangle {
                 anchors.left: parent.left
                 anchors.top: parent.top
                 anchors.topMargin: 14
-                font.family: LokiComponents.Style.fontMedium.name
+                font.family: SevabitComponents.Style.fontMedium.name
                 font.pixelSize: 20 * scaleRatio
                 color: "white"
                 text: getConnectionStatusString(item.connected) + translationManager.emptyString
@@ -119,9 +119,9 @@ Rectangle {
                 anchors.left: parent.left
                 anchors.top: parent.top
                 anchors.topMargin: 40
-                font.family: LokiComponents.Style.fontMedium.name
+                font.family: SevabitComponents.Style.fontMedium.name
                 font.pixelSize: 12 * scaleRatio
-                color: LokiComponents.Style.dimmedFontColor
+                color: SevabitComponents.Style.dimmedFontColor
                 text: (appWindow.currentDaemonAddress == ":") ? "Daemon Address Not Set" : appWindow.currentDaemonAddress
             }
         }

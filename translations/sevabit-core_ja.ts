@@ -626,7 +626,7 @@
     <message>
         <location filename="../pages/Mining.qml" line="82"/>
         <source>Mining with your computer helps strengthen the SevaBit network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some SevaBit. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>あなたのコンピュータでマイニングを行うことで、Lokiのネットワークをより強固にすることができます。マイニングをする人が増えるほど、ネットワークへの攻撃が難しくなります。一人一人の協力が大切です。&lt;br&gt; &lt;br&gt;マイニングをすると、低確率ですがLokiを獲得できる可能性があります。あなたのコンピュータは、ある計算問題の解となるブロックとそのハッシュ値を計算します。正解のブロックが見つかると、あなたはそれに伴う報酬を得ます。グッドラック!</translation>
+        <translation>あなたのコンピュータでマイニングを行うことで、Sevabitのネットワークをより強固にすることができます。マイニングをする人が増えるほど、ネットワークへの攻撃が難しくなります。一人一人の協力が大切です。&lt;br&gt; &lt;br&gt;マイニングをすると、低確率ですがSevabitを獲得できる可能性があります。あなたのコンピュータは、ある計算問題の解となるブロックとそのハッシュ値を計算します。正解のブロックが見つかると、あなたはそれに伴う報酬を得ます。グッドラック!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="95"/>
@@ -1294,7 +1294,7 @@ The old wallet cache file will be renamed and can be restored later.
     <message>
         <location filename="../pages/Settings.qml" line="645"/>
         <source>Embedded SevaBit version: </source>
-        <translation>埋め込まれたLokiのバージョン: </translation>
+        <translation>埋め込まれたSevabitのバージョン: </translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="351"/>
@@ -1342,7 +1342,7 @@ The old wallet cache file will be renamed and can be restored later.
     <message>
         <location filename="../pages/SharedRingDB.qml" line="97"/>
         <source>This page allows you to interact with the shared ring database. This database is meant for use by SevaBit wallets as well as wallets from SevaBit clones which reuse the SevaBit keys.</source>
-        <translation>このページでは共有リングデータベースを操作できます。このデータベースはLokiウォレットおよびLokiのキーを再利用するLokiクローンのウォレットで利用するためのものです。</translation>
+        <translation>このページでは共有リングデータベースを操作できます。このデータベースはSevabitウォレットおよびSevabitのキーを再利用するSevabitクローンのウォレットで利用するためのものです。</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="119"/>
@@ -1434,12 +1434,12 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <source>In order to avoid nullifying the protection afforded by SevaBit&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing SevaBit clone allows you do spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by SevaBit and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing SevaBit clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your SevaBit safely.&lt;br&gt;If you do not use a key-reusing SevaBit clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation type="vanished">Lokiのリング署名による保護を無効化しないため、あるアウトプットを使う際に異なるブロックチェーンで異なるリングを使うことは避けなければなりません。これは通常問題になりませんが、キーを再利用するLokiクローンが既存のアウトプットの使用を許している場合問題になります。この場合、既存のアウトプットは両方のチェーンで同じリングを使わなくてはなりません。&lt;br&gt;これはキーを再利用するソフトウェアが積極的にプライバシーを侵害しようとしない限り自動的に行われます。&lt;br&gt;もしキーを再利用するLokiクローンを使っていてそのクローンがこの保護を含んでいない場合も、まずクローンの方でアウトプットを使用しその後リングをこのページに手動で追加することで、トランザクションは保護されLokiを安全に使用できるようになります。&lt;br&gt;これらの機能を提供しないキーを再利用するLokiクローンを使用していない場合、すべては自動化されているので何もする必要はありません。&lt;br&gt;</translation>
+        <translation type="vanished">Sevabitのリング署名による保護を無効化しないため、あるアウトプットを使う際に異なるブロックチェーンで異なるリングを使うことは避けなければなりません。これは通常問題になりませんが、キーを再利用するSevabitクローンが既存のアウトプットの使用を許している場合問題になります。この場合、既存のアウトプットは両方のチェーンで同じリングを使わなくてはなりません。&lt;br&gt;これはキーを再利用するソフトウェアが積極的にプライバシーを侵害しようとしない限り自動的に行われます。&lt;br&gt;もしキーを再利用するSevabitクローンを使っていてそのクローンがこの保護を含んでいない場合も、まずクローンの方でアウトプットを使用しその後リングをこのページに手動で追加することで、トランザクションは保護されSevabitを安全に使用できるようになります。&lt;br&gt;これらの機能を提供しないキーを再利用するSevabitクローンを使用していない場合、すべては自動化されているので何もする必要はありません。&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="267"/>
         <source>This records rings used by outputs spent on SevaBit on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>キーを再利用するチェーンでアウトプットに使用されたリングを記録し、プライバシーの問題を避けるためLokiでも同じリングを使うようにします。</translation>
+        <translation>キーを再利用するチェーンでアウトプットに使用されたリングを記録し、プライバシーの問題を避けるためSevabitでも同じリングを使うようにします。</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="296"/>
@@ -1834,7 +1834,7 @@ The old wallet cache file will be renamed and can be restored later.
     <message>
         <location filename="../pages/Transfer.qml" line="618"/>
         <source>SevaBit sent successfully</source>
-        <translation>Lokiの送金に成功しました</translation>
+        <translation>Sevabitの送金に成功しました</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="634"/>
@@ -2096,7 +2096,7 @@ Spend Proofの場合、宛先アドレスを指定する必要はありません
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="97"/>
         <source>Kickstart the SevaBit blockchain?</source>
-        <translation>Lokiのブロックチェーンを初期化しますか？</translation>
+        <translation>Sevabitのブロックチェーンを初期化しますか？</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="113"/>
@@ -2111,7 +2111,7 @@ Spend Proofの場合、宛先アドレスを指定する必要はありません
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="140"/>
         <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular SevaBit instance. However, storing the full blockchain is beneficial to the security of the SevaBit network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
-        <translation>ディスク容量節約モードを有効にすると、使用するディスク容量はずっと小さくなりますが、通信帯域の使用量は通常モードと変わりません。ただし、Lokiのネットワークの安全性を高める意味で、完全なブロックチェーンの全体を保存することが推奨されています。もしあなたのコンピュータのディスク容量が小さい場合は、このオプションを使用してください。</translation>
+        <translation>ディスク容量節約モードを有効にすると、使用するディスク容量はずっと小さくなりますが、通信帯域の使用量は通常モードと変わりません。ただし、Sevabitのネットワークの安全性を高める意味で、完全なブロックチェーンの全体を保存することが推奨されています。もしあなたのコンピュータのディスク容量が小さい場合は、このオプションを使用してください。</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="153"/>
@@ -2121,7 +2121,7 @@ Spend Proofの場合、宛先アドレスを指定する必要はありません
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="169"/>
         <source>Mining secures the SevaBit network, and also pays a small reward for the work done. This option will let SevaBit mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Lokiの採掘をすることでネットワークの安全性が高まり、また提供した計算量の対価として低い確率ですが報酬が得られます。このオプションは、あなたのコンピュータが電源に接続されていてなおかつアイドル状態の場合に、自動的にLokiの採掘を行うことを許可します。あなたが作業を再開すると、採掘は停止されます。</translation>
+        <translation>Sevabitの採掘をすることでネットワークの安全性が高まり、また提供した計算量の対価として低い確率ですが報酬が得られます。このオプションは、あなたのコンピュータが電源に接続されていてなおかつアイドル状態の場合に、自動的にSevabitの採掘を行うことを許可します。あなたが作業を再開すると、採掘は停止されます。</translation>
     </message>
 </context>
 <context>
@@ -2153,7 +2153,7 @@ Spend Proofの場合、宛先アドレスを指定する必要はありません
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="114"/>
         <source>To be able to communicate with the SevaBit network your wallet needs to be connected to a SevaBit node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Lokiネットワークと通信するためにウォレットはLokiノードに接続されている必要があります。プライバシーを最大限に保護するため自分自身のノードを走らせることが推奨されています。
+        <translation>Sevabitネットワークと通信するためにウォレットはSevabitノードに接続されている必要があります。プライバシーを最大限に保護するため自分自身のノードを走らせることが推奨されています。
 &lt;br&gt;&lt;br&gt;                         自分自身のノードを走らせることができない場合はリモートノードに接続することも可能です。</translation>
     </message>
     <message>
@@ -2187,7 +2187,7 @@ Spend Proofの場合、宛先アドレスを指定する必要はありません
     <message>
         <location filename="../wizard/WizardDonation.qml" line="93"/>
         <source>SevaBit development is solely supported by donations</source>
-        <translation>Lokiの開発は寄付のみによって支えられています</translation>
+        <translation>Sevabitの開発は寄付のみによって支えられています</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="113"/>
@@ -2202,7 +2202,7 @@ Spend Proofの場合、宛先アドレスを指定する必要はありません
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
         <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support SevaBit development. For instance, a 50% autodonation take a transaction fee of 0.005 XMR and add a 0.0025 XMR to support SevaBit development.</source>
-        <translation>取引には少額の手数料がかかります。このオプションはその手数料に加えて、手数料の何パーセントかをLokiの開発チームへの寄付として支払うことを許可します。例えば自動寄付の割合が50%で、取引の手数料が0.005 XMRであった場合、0.0025 XMRが開発チームへの寄付として取引に上乗せされます。</translation>
+        <translation>取引には少額の手数料がかかります。このオプションはその手数料に加えて、手数料の何パーセントかをSevabitの開発チームへの寄付として支払うことを許可します。例えば自動寄付の割合が50%で、取引の手数料が0.005 XMRであった場合、0.0025 XMRが開発チームへの寄付として取引に上乗せされます。</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2212,7 +2212,7 @@ Spend Proofの場合、宛先アドレスを指定する必要はありません
     <message>
         <location filename="../wizard/WizardDonation.qml" line="190"/>
         <source>Mining secures the SevaBit network, and also pays a small reward for the work done. This option will let SevaBit mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Lokiの採掘をすることでネットワークの安全性が高まり、また提供した計算量の対価として低い確率ですが報酬が得られます。このオプションは、あなたのコンピュータが電源に接続されていてなおかつアイドル状態の場合に、自動的にLokiの採掘を行うことを許可します。あなたが作業を再開すると、採掘は停止されます。</translation>
+        <translation>Sevabitの採掘をすることでネットワークの安全性が高まり、また提供した計算量の対価として低い確率ですが報酬が得られます。このオプションは、あなたのコンピュータが電源に接続されていてなおかつアイドル状態の場合に、自動的にSevabitの採掘を行うことを許可します。あなたが作業を再開すると、採掘は停止されます。</translation>
     </message>
 </context>
 <context>
@@ -2305,7 +2305,7 @@ Spend Proofの場合、宛先アドレスを指定する必要はありません
     <message>
         <location filename="../wizard/WizardMain.qml" line="367"/>
         <source>USE SEVABIT</source>
-        <translation>Lokiを使う</translation>
+        <translation>Sevabitを使う</translation>
     </message>
     <message>
         <location filename="../wizard/WizardMain.qml" line="399"/>
@@ -2425,7 +2425,7 @@ Spend Proofの場合、宛先アドレスを指定する必要はありません
     <message>
         <location filename="../wizard/WizardOptions.qml" line="75"/>
         <source>Welcome to SevaBit!</source>
-        <translation>Lokiへようこそ!</translation>
+        <translation>Sevabitへようこそ!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="87"/>
@@ -2515,7 +2515,7 @@ Spend Proofの場合、宛先アドレスを指定する必要はありません
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="73"/>
         <source>Welcome to SevaBit!</source>
-        <translation>Lokiへようこそ!</translation>
+        <translation>Sevabitへようこそ!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="83"/>
@@ -2741,7 +2741,7 @@ Amount: </source>
     <message>
         <location filename="../main.qml" line="1785"/>
         <source>New version of sevabit-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>新しいバージョンのloki-wallet-guiを入手できます: %1&lt;br&gt;%2</translation>
+        <translation>新しいバージョンのsevabit-wallet-guiを入手できます: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="634"/>
@@ -2777,7 +2777,7 @@ Fee: </source>
     <message>
         <location filename="../main.qml" line="790"/>
         <source>SevaBit sent successfully: %1 transaction(s) </source>
-        <translation>Lokiの送金に成功しました: %1 トランザクション</translation>
+        <translation>Sevabitの送金に成功しました: %1 トランザクション</translation>
     </message>
     <message>
         <location filename="../main.qml" line="827"/>

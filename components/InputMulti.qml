@@ -31,26 +31,26 @@ import QtQuick.Controls 2.0
 import QtQuick 2.7
 
 import "../js/TxUtils.js" as TxUtils
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 TextArea {
     property int fontSize: 18 * scaleRatio
     property bool fontBold: false
-    property string fontColor: LokiComponents.Style.defaultFontColor
+    property string fontColor: SevabitComponents.Style.defaultFontColor
 
     property bool mouseSelection: true
     property bool error: false
     property bool addressValidation: false
 
     id: textArea
-    font.family: LokiComponents.Style.fontRegular.name
+    font.family: SevabitComponents.Style.fontRegular.name
     color: fontColor
     font.pixelSize: fontSize
     font.bold: fontBold
     horizontalAlignment: TextInput.AlignLeft
     selectByMouse: mouseSelection
-    selectionColor: LokiComponents.Style.dimmedFontColor
-    selectedTextColor: LokiComponents.Style.defaultFontColor
+    selectionColor: SevabitComponents.Style.dimmedFontColor
+    selectedTextColor: SevabitComponents.Style.defaultFontColor
 
     onTextChanged: {
         if(addressValidation){

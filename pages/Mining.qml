@@ -31,7 +31,7 @@ import QtQuick 2.0
 import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
 import "../components"
-import LokiComponents.Wallet 1.0
+import SevabitComponents.Wallet 1.0
 
 Rectangle {
     id: root

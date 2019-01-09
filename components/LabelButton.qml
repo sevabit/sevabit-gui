@@ -30,7 +30,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 
 Rectangle {
@@ -49,7 +49,7 @@ Rectangle {
         id: labelButtonText
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
-        font.family: LokiComponents.Style.fontRegular.name
+        font.family: SevabitComponents.Style.fontRegular.name
         font.pixelSize: 12
         font.bold: true
         text: ""

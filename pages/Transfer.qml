@@ -30,11 +30,11 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
-import LokiComponents.Clipboard 1.0
-import LokiComponents.PendingTransaction 1.0
-import LokiComponents.Wallet 1.0
+import SevabitComponents.Clipboard 1.0
+import SevabitComponents.PendingTransaction 1.0
+import SevabitComponents.Wallet 1.0
 import "../components"
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 import "." 1.0
 
 
@@ -114,7 +114,7 @@ Rectangle {
       RowLayout {
           visible: root.warningContent !== ""
 
-          LokiComponents.WarningBox {
+          SevabitComponents.WarningBox {
               text: warningContent
               onLinkActivated: {
                   appWindow.startDaemon(appWindow.persistentSettings.daemonFlags);
@@ -489,7 +489,7 @@ Rectangle {
     FileDialog {
         id: signTxDialog
         title: qsTr("Please choose a file") + translationManager.emptyString
-        folder: "file://" + lokiAccountsDir
+        folder: "file://" + sevabitAccountsDir
         nameFilters: [ "Unsigned transfers (*)"]
 
         onAccepted: {
@@ -550,7 +550,7 @@ Rectangle {
     FileDialog {
         id: submitTxDialog
         title: qsTr("Please choose a file") + translationManager.emptyString
-        folder: "file://" + lokiAccountsDir
+        folder: "file://" + sevabitAccountsDir
         nameFilters: [ "signed transfers (*)"]
 
         onAccepted: {

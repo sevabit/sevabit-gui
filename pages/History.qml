@@ -30,11 +30,11 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
-import LokiComponents.Wallet 1.0
-import LokiComponents.WalletManager 1.0
-import LokiComponents.TransactionHistory 1.0
-import LokiComponents.TransactionInfo 1.0
-import LokiComponents.TransactionHistoryModel 1.0
+import SevabitComponents.Wallet 1.0
+import SevabitComponents.WalletManager 1.0
+import SevabitComponents.TransactionHistory 1.0
+import SevabitComponents.TransactionInfo 1.0
+import SevabitComponents.TransactionHistoryModel 1.0
 
 import "../components"
 

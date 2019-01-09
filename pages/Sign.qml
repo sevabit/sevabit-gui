@@ -34,8 +34,8 @@ import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
 
 import "../components"
-import LokiComponents.Clipboard 1.0
-import LokiComponents.WalletManager 1.0
+import SevabitComponents.Clipboard 1.0
+import SevabitComponents.WalletManager 1.0
 
 Rectangle {
     id: mainLayout

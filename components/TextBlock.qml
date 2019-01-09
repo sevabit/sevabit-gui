@@ -1,11 +1,11 @@
 import QtQuick 2.0
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 TextEdit {
-    color: LokiComponents.Style.defaultFontColor
-    font.family: LokiComponents.Style.fontRegular.name
-    selectionColor: LokiComponents.Style.dimmedFontColor
+    color: SevabitComponents.Style.defaultFontColor
+    font.family: SevabitComponents.Style.fontRegular.name
+    selectionColor: SevabitComponents.Style.dimmedFontColor
     wrapMode: Text.Wrap
     readOnly: true
     selectByMouse: true

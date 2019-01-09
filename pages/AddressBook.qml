@@ -30,8 +30,8 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 import "../components"
-import LokiComponents.AddressBook 1.0
-import LokiComponents.AddressBookModel 1.0
+import SevabitComponents.AddressBook 1.0
+import SevabitComponents.AddressBookModel 1.0
 
 Rectangle {
     id: root

@@ -30,7 +30,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 RowLayout {
     id: checkBox
@@ -57,7 +57,7 @@ RowLayout {
             height: checkBox.height - 1
             y: 0
             color: "transparent"
-            border.color: checkBox.checked ? LokiComponents.Style.heroGreen : Qt.rgba(1, 1, 1, 0.25)
+            border.color: checkBox.checked ? SevabitComponents.Style.heroGreen : Qt.rgba(1, 1, 1, 0.25)
         }
 
         Rectangle {
@@ -85,9 +85,9 @@ RowLayout {
 
         Text {
             id: label
-            font.family: LokiComponents.Style.fontRegular.name
+            font.family: SevabitComponents.Style.fontRegular.name
             font.pixelSize: checkBox.fontSize
-            color: LokiComponents.Style.defaultFontColor
+            color: SevabitComponents.Style.defaultFontColor
             wrapMode: Text.Wrap
             Layout.fillWidth: true
             anchors.left: backgroundRect.right

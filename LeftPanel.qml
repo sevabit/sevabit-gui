@@ -30,8 +30,8 @@
 import QtQuick 2.2
 import QtQuick.Layouts 1.1
 import QtGraphicalEffects 1.0
-import LokiComponents.Wallet 1.0
-import LokiComponents.NetworkType 1.0
+import SevabitComponents.Wallet 1.0
+import SevabitComponents.NetworkType 1.0
 import "components"
 
 Rectangle {
