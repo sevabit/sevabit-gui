@@ -3549,7 +3549,7 @@ Opis: </translation>
     </message>
     <message>
         <source>Remaining blocks (local node):</source>
-        <translation type="vanished">Pozostałe bsevabit (węzeł lokalny):</translation>
+        <translation type="vanished">Pozostałe bloki (węzeł lokalny):</translation>
     </message>
     <message>
         <location filename="../main.qml" line="502"/>
