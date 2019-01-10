@@ -189,7 +189,7 @@ The SevaBit GUI on Windows is 64 bits only; 32-bit Windows GUI builds are not of
 
     ```
     cd sevabit-gui
-    ./build.sh
+    ./build.sh release-static
     cd build
     make deploy
     ```
