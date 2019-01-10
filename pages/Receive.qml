@@ -34,13 +34,13 @@ import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
 
 import "../components"
-import LokiComponents.Clipboard 1.0
-import LokiComponents.Wallet 1.0
-import LokiComponents.WalletManager 1.0
-import LokiComponents.TransactionHistory 1.0
-import LokiComponents.TransactionHistoryModel 1.0
-import LokiComponents.Subaddress 1.0
-import LokiComponents.SubaddressModel 1.0
+import SevabitComponents.Clipboard 1.0
+import SevabitComponents.Wallet 1.0
+import SevabitComponents.WalletManager 1.0
+import SevabitComponents.TransactionHistory 1.0
+import SevabitComponents.TransactionHistoryModel 1.0
+import SevabitComponents.Subaddress 1.0
+import SevabitComponents.SubaddressModel 1.0
 import "../js/TxUtils.js" as TxUtils
 
 Rectangle {

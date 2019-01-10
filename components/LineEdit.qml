@@ -29,7 +29,7 @@
 
 import QtQuick 2.0
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 Item {
     id: item
@@ -37,10 +37,10 @@ Item {
 
     property alias placeholderText: placeholderLabel.text
     property bool placeholderCenter: false
-    property string placeholderFontFamily: LokiComponents.Style.fontRegular.name
+    property string placeholderFontFamily: SevabitComponents.Style.fontRegular.name
     property bool placeholderFontBold: false
     property int placeholderFontSize: 18 * scaleRatio
-    property string placeholderColor: LokiComponents.Style.defaultFontColor
+    property string placeholderColor: SevabitComponents.Style.defaultFontColor
     property real placeholderOpacity: 0.25
 
     property alias validator: input.validator
@@ -55,9 +55,9 @@ Item {
     property bool borderDisabled: false
     property string borderColor: {
         if(input.activeFocus){
-            return LokiComponents.Style.heroGreen;
+            return SevabitComponents.Style.heroGreen;
         } else {
-            return LokiComponents.Style.inputBorderColorInActive;
+            return SevabitComponents.Style.inputBorderColorInActive;
         }
     }
 
@@ -108,11 +108,11 @@ Item {
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.topMargin: 2 * scaleRatio
-        font.family: LokiComponents.Style.fontLight.name
+        font.family: SevabitComponents.Style.fontLight.name
         font.pixelSize: labelFontSize
         font.bold: labelFontBold
         textFormat: Text.RichText
-        color: LokiComponents.Style.defaultFontColor
+        color: SevabitComponents.Style.defaultFontColor
         onLinkActivated: item.labelLinkActivated()
 
         MouseArea {
@@ -122,7 +122,7 @@ Item {
         }
     }
 
-    LokiComponents.LabelButton {
+    SevabitComponents.LabelButton {
         id: copyButtonId
         text: qsTr("Copy")
         anchors.right: parent.right
@@ -194,7 +194,7 @@ Item {
             visible: false
         }
 
-        LokiComponents.Input {
+        SevabitComponents.Input {
             id: input
             anchors.fill: parent
             anchors.leftMargin: inlineIcon.visible ? 38 : 6 * scaleRatio
@@ -207,7 +207,7 @@ Item {
             bottomPadding: 10 * scaleRatio
         }
 
-        LokiComponents.InlineButton {
+        SevabitComponents.InlineButton {
             id: inlineButtonId
             visible: item.inlineButtonText ? true : false
             anchors.right: parent.right

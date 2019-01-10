@@ -33,10 +33,10 @@ import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
 import "../../js/Windows.js" as Windows
 import "../../js/Utils.js" as Utils
-import "../../components" as LokiComponents
+import "../../components" as SevabitComponents
 import "../../pages"
 import "."
-import LokiComponents.Clipboard 1.0
+import SevabitComponents.Clipboard 1.0
 
 Rectangle {
     Layout.fillWidth: true
@@ -56,8 +56,8 @@ Rectangle {
             property string fontColor: "white"
             property int fontSize: 13 * scaleRatio
             property bool fontBold: true
-            property var fontFamily: LokiComponents.Style.fontRegular.name
-            property string borderColor: LokiComponents.Style.buttonBackgroundColor
+            property var fontFamily: SevabitComponents.Style.fontRegular.name
+            property string borderColor: SevabitComponents.Style.buttonBackgroundColor
             property int textMargin: {
                 // left-right margins for a given cell
                 if(isMobile){

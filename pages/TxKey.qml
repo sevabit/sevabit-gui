@@ -33,7 +33,7 @@ import QtQuick.Controls.Styles 1.4
 import QtQuick.Layouts 1.1
 
 import "../components"
-import LokiComponents.Clipboard 1.0
+import SevabitComponents.Clipboard 1.0
 
 import "../js/TxUtils.js" as TxUtils
 

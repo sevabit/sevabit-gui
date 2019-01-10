@@ -102,7 +102,7 @@ echo "var GUI_VERSION = \"$TAGNAME\"" > version.js
 pushd "$SEVABIT_DIR"
 get_tag
 popd
-echo "var GUI_LOKI_VERSION = \"$TAGNAME\"" >> version.js
+echo "var GUI_SEVABIT_VERSION = \"$TAGNAME\"" >> version.js
 
 cd build
 if ! QMAKE=$(find_command qmake qmake-qt5); then
@@ -112,7 +112,7 @@ fi
 $QMAKE ../sevabit-wallet-gui.pro "$CONFIG" || exit
 $MAKE -j2 || exit 
 
-# Copy lokid to bin folder
+# Copy sevabitd to bin folder
 if [ "$platform" != "mingw32" ] && [ "$ANDROID" != true ]; then
 cp ../$SEVABIT_DIR/bin/$SEVABITD_EXEC $BIN_PATH
 fi

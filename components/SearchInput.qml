@@ -29,7 +29,7 @@
 
 import QtQuick 2.0
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 Item {
     id: item
@@ -216,7 +216,7 @@ Item {
             }
         }
 
-        LokiComponents.StandardButton {
+        SevabitComponents.StandardButton {
             id: button
             anchors.top: parent.top
             anchors.bottom: parent.bottom

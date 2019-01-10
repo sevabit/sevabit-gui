@@ -28,7 +28,7 @@
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import QtQuick 2.2
-import LokiComponents.TranslationManager 1.0
+import SevabitComponents.TranslationManager 1.0
 import QtQuick.Dialogs 1.2
 import QtQuick.Layouts 1.2
 import "../components"
@@ -345,7 +345,7 @@ ColumnLayout {
             Layout.maximumWidth: 600 * scaleRatio
             Layout.minimumWidth: 200 * scaleRatio
             id: fileUrlInput
-            text: lokiAccountsDir + "/"
+            text: sevabitAccountsDir + "/"
 
             // workaround for the bug "filechooser only opens once"
             MouseArea {

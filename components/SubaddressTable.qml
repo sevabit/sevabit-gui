@@ -28,9 +28,9 @@
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import QtQuick 2.0
-import LokiComponents.Clipboard 1.0
+import SevabitComponents.Clipboard 1.0
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 ListView {
     id: listView
@@ -49,7 +49,7 @@ ListView {
         width: listView.width
         clip: true
 
-        LokiComponents.LineEditMulti {
+        SevabitComponents.LineEditMulti {
             id: addressLine
 
             fontSize: 14
@@ -69,7 +69,7 @@ ListView {
             addressValidation: false
         }
 
-        LokiComponents.IconButton {
+        SevabitComponents.IconButton {
             id: clipboardButton
             imageSource: "../images/copyToClipboard.png"
 
@@ -105,7 +105,7 @@ ListView {
             font.family: "Arial"
             font.bold: true
             font.pixelSize: 12
-            color: LokiComponents.Style.greyFontColor
+            color: SevabitComponents.Style.greyFontColor
             text: label
         }
 
@@ -127,7 +127,7 @@ ListView {
             anchors.top: parent.top
             anchors.bottom: parent.bottom
             width: 1
-            color: LokiComponents.Style.grey
+            color: SevabitComponents.Style.grey
             z: 6
         }
 
@@ -136,7 +136,7 @@ ListView {
             anchors.top: parent.top
             anchors.bottom: parent.bottom
             width: 1
-            color: LokiComponents.Style.grey
+            color: SevabitComponents.Style.grey
             z: 6
         }
 
@@ -144,14 +144,14 @@ ListView {
             anchors.right: parent.right
             anchors.left: parent.left
             anchors.bottom: parent.bottom
-            color: LokiComponents.Style.grey
+            color: SevabitComponents.Style.grey
             height: 1
             z: 6
         }
 
         Rectangle {
             width: 3
-            color: LokiComponents.Style.lightGreen
+            color: SevabitComponents.Style.lightGreen
             visible: listView.currentIndex == index
             anchors.left: parent.left
             anchors.top: parent.top

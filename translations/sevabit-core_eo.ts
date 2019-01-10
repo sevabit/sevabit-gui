@@ -726,12 +726,12 @@
     </message>
     <message>
         <source>Mining with your computer helps strengthen the SevaBit network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some SevaBit. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation type="vanished">Mini per via komputilo helpas plisekurigi la SevaBit-reton. Ju pli da homoj minas, des mapli atakebla iĝas la reto, kaj ĉiu malgranda helpo utilas. &lt;br&gt; &lt;br&gt;La minado ankaŭ donas al vi etan ŝancon ricevi rekompencon je Lokij. Via komputilo kreos haketojn, serĉante bloksolvojn. Se vi trovas blokon, vi ricevos la asociitan rekompencon. Bonŝancon!</translation>
+        <translation type="vanished">Mini per via komputilo helpas plisekurigi la SevaBit-reton. Ju pli da homoj minas, des mapli atakebla iĝas la reto, kaj ĉiu malgranda helpo utilas. &lt;br&gt; &lt;br&gt;La minado ankaŭ donas al vi etan ŝancon ricevi rekompencon je Sevabitj. Via komputilo kreos haketojn, serĉante bloksolvojn. Se vi trovas blokon, vi ricevos la asociitan rekompencon. Bonŝancon!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="74"/>
         <source>Mining with your computer helps strengthen the SevaBit network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some SevaBit. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Minadi per via komputilo helpas plisekurigi la SevaBit-reton. Ju pli da homoj minas, des mapli atakebla iĝas la reto, kaj ĉiu malgranda helpo utilas. &lt;br&gt; &lt;br&gt;La minado ankaŭ donas al vi etan ŝancon ricevi rekompencon je Lokij. Via komputilo kreos haketojn, serĉante bloksolvojn. Se vi trovas blokon, vi ricevos la asociitan rekompencon. Bonŝancon!</translation>
+        <translation>Minadi per via komputilo helpas plisekurigi la SevaBit-reton. Ju pli da homoj minas, des mapli atakebla iĝas la reto, kaj ĉiu malgranda helpo utilas. &lt;br&gt; &lt;br&gt;La minado ankaŭ donas al vi etan ŝancon ricevi rekompencon je Sevabitj. Via komputilo kreos haketojn, serĉante bloksolvojn. Se vi trovas blokon, vi ricevos la asociitan rekompencon. Bonŝancon!</translation>
     </message>
     <message>
         <source>CPU threads</source>
@@ -1645,10 +1645,10 @@ La malnova monujkaŝmemoro renomiĝos, vin povas restarigi gîn poste.
     <message>
         <location filename="../pages/SharedRingDB.qml" line="113"/>
         <source>In order to obscure which inputs in a SevaBit transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection SevaBit uses.&lt;br&gt;
-To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the SevaBit project and is available on the getloki.org website, and you can import this list here.&lt;br&gt;
+To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the SevaBit project and is available on the getsevabit.org website, and you can import this list here.&lt;br&gt;
 Alternatively, you can scan the blockchain (and the blockchain of key-reusing SevaBit clones) yourself using the sevabit-blockchain-blackball tool to create a list of known spent outputs.&lt;br&gt;</source>
         <translation>Ĉar ni celas kaŝi kiujn enigojn de Monera transakcio elspeziĝas, neniu tria persono devas kapabli kompreni kiuj enigoj en ringo laŭscie jam elspeziĝis. Tiu kapablo malfortigus la ŝirmefikon de ringsubskriboj. Se iu ekscias ke ĉiuj enigoj, escepte de unu, jam elspeziĝis, tiam la enigo kiu fakte elspeziĝas aperas tuj. Tio nuligus la efekton de ringsubskriboj, unu el la tri plej gravaj privatecŝirmiloj uzitaj en SevaBit. &lt;br&gt;
-Ekzistas listo de laŭscie elspezitaj enigoj, kiu permesas malhelpi ilian uzadon en transakcioj. Tiun liston bontenas la SevaBit-projekto, kaj disponeblas ĉe la retejo getloki.org, vi povas importi ĝin ĉi tien.&lt;br&gt;
+Ekzistas listo de laŭscie elspezitaj enigoj, kiu permesas malhelpi ilian uzadon en transakcioj. Tiun liston bontenas la SevaBit-projekto, kaj disponeblas ĉe la retejo getsevabit.org, vi povas importi ĝin ĉi tien.&lt;br&gt;
 Alternative, vi povas mem skani la blokĉenon (kaj la blokĉenon de ŝlosilreuzanta SevaBit-klonoj) uzante la Monerblokĉen-malakceptilon por krei liston de laŭscie elspezitaj eligoj. &lt;br&gt;
 </translation>
     </message>
@@ -1719,7 +1719,7 @@ Alternative, vi povas mem skani la blokĉenon (kaj la blokĉenon de ŝlosilreuza
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="113"/>
-        <source>In order to obscure which inputs in a SevaBit transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection SevaBit uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the SevaBit project and is available on the getloki.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing SevaBit clones) yourself using the sevabit-blockchain-blackball tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <source>In order to obscure which inputs in a SevaBit transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection SevaBit uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the SevaBit project and is available on the getsevabit.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing SevaBit clones) yourself using the sevabit-blockchain-blackball tool to create a list of known spent outputs.&lt;br&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1735,7 +1735,7 @@ Alternative, vi povas mem skani la blokĉenon (kaj la blokĉenon de ŝlosilreuza
     <message>
         <location filename="../pages/SharedRingDB.qml" line="267"/>
         <source>This records rings used by outputs spent on SevaBit on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>Tio registras la ringojn kiuj uziĝis por elspezi Lokin sur ŝlosilreuzanta ĉeno, tiel ke la sama ringo uziĝu denove, por malhelpi privatecproblemojn.</translation>
+        <translation>Tio registras la ringojn kiuj uziĝis por elspezi Sevabitn sur ŝlosilreuzanta ĉeno, tiel ke la sama ringo uziĝu denove, por malhelpi privatecproblemojn.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="111"/>
@@ -2207,7 +2207,7 @@ Alternative, vi povas mem skani la blokĉenon (kaj la blokĉenon de ŝlosilreuza
     <message>
         <location filename="../pages/Transfer.qml" line="622"/>
         <source>SevaBit sent successfully</source>
-        <translation>Sukcese sendis Lokin</translation>
+        <translation>Sukcese sendis Sevabitn</translation>
     </message>
     <message>
         <source>Show advanced options</source>
@@ -3047,7 +3047,7 @@ Description: </source>
     </message>
     <message>
         <source>This address received %1 sevabit, but the transaction is not yet mined</source>
-        <translation type="vanished">Tiu ĉi adreso ricevis %1 lokin; sed la transakcio ankoraŭ ne estas minata</translation>
+        <translation type="vanished">Tiu ĉi adreso ricevis %1 sevabitn; sed la transakcio ankoraŭ ne estas minata</translation>
     </message>
     <message>
         <location filename="../main.qml" line="861"/>
@@ -3360,12 +3360,12 @@ Description: </source>
     <message>
         <location filename="../main.qml" line="788"/>
         <source>SevaBit sent successfully: %1 transaction(s) </source>
-        <translation>Sukcese sendis Lokin: %1 transakcio(j)</translation>
+        <translation>Sukcese sendis Sevabitn: %1 transakcio(j)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="862"/>
         <source>This address received %1 sevabit, with %2 confirmation(s).</source>
-        <translation>Tiu adreso ricevis %1 lokijn, kun %2 konfirmo(j)</translation>
+        <translation>Tiu adreso ricevis %1 sevabitjn, kun %2 konfirmo(j)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="880"/>

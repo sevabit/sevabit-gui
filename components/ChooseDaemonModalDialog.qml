@@ -35,8 +35,8 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Window 2.0
 
-import LokiComponents.NetworkType 1.0
-import "../components" as LokiComponents
+import SevabitComponents.NetworkType 1.0
+import "../components" as SevabitComponents
 
 Item {
     id: root
@@ -85,8 +85,8 @@ Item {
                 Layout.alignment: Qt.AlignHCenter
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: 16 * scaleRatio
-                font.family: LokiComponents.Style.fontLight.name
-                color: LokiComponents.Style.defaultFontColor
+                font.family: SevabitComponents.Style.fontLight.name
+                color: SevabitComponents.Style.defaultFontColor
             }
 
             RowLayout {
@@ -94,7 +94,7 @@ Item {
                 spacing: 16 * scaleRatio
                 Layout.topMargin: 16
 
-                LokiComponents.StandardButton {
+                SevabitComponents.StandardButton {
                     id: defaultRemoteNodeButton
                     height: 48 * scaleRatio
                     enabled: appWindow.getRemoteNodeList().length > 0
@@ -110,7 +110,7 @@ Item {
                     }
                 }
 
-                LokiComponents.StandardButton {
+                SevabitComponents.StandardButton {
                     id: localNodeButton
                     height: 48 * scaleRatio
                     text: qsTr("Start Local Daemon\n(Downloads blockchain, slow but private)") + translationManager.emptyString
@@ -121,7 +121,7 @@ Item {
                     }
                 }
 
-                LokiComponents.StandardButton {
+                SevabitComponents.StandardButton {
                     id: customSettingsButton
                     height: 48 * scaleRatio
                     text: qsTr("Use Custom Settings\n(Setup later in settings)") + translationManager.emptyString

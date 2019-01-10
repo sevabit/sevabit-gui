@@ -30,17 +30,17 @@
 import QtQuick.Controls 2.0
 import QtQuick 2.7
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 TextField {
-    font.family: LokiComponents.Style.fontRegular.name
+    font.family: SevabitComponents.Style.fontRegular.name
     font.pixelSize: 18 * scaleRatio
     font.bold: true
     horizontalAlignment: TextInput.AlignLeft
     selectByMouse: true
-    color: LokiComponents.Style.defaultFontColor
-    selectionColor: LokiComponents.Style.dimmedFontColor
-    selectedTextColor: LokiComponents.Style.defaultFontColor
+    color: SevabitComponents.Style.defaultFontColor
+    selectionColor: SevabitComponents.Style.dimmedFontColor
+    selectedTextColor: SevabitComponents.Style.defaultFontColor
 
     background: Rectangle {
         color: "transparent"

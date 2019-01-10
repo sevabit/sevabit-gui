@@ -32,7 +32,7 @@ import QtQuick.Controls.Styles 1.2
 import QtQuick 2.2
 import QtQuick.Layouts 1.1
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 GridLayout {
     columns: (isMobile) ? 1 : 2
@@ -45,10 +45,10 @@ GridLayout {
 
     // TODO: LEGACY; remove these placeHolder variables when
     // the wizards get redesigned to the black-theme
-    property string placeholderFontFamily: LokiComponents.Style.fontRegular.name
+    property string placeholderFontFamily: SevabitComponents.Style.fontRegular.name
     property bool placeholderFontBold: false
     property int placeholderFontSize: 18 * scaleRatio
-    property string placeholderColor: LokiComponents.Style.defaultFontColor
+    property string placeholderColor: SevabitComponents.Style.defaultFontColor
     property real placeholderOpacity: 0.25
 
     property string lineEditBackgroundColor: "white"

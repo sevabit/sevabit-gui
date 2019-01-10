@@ -730,12 +730,12 @@
     </message>
     <message>
         <source>Mining with your computer helps strengthen the SevaBit network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some SevaBit. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation type="vanished">Brytning med din dator hjälper till att stärka Lokis nätverk. Ju fler som bryter desto svårare blir det att angripa nätverket, och varje litet bidrag hjälper till.&lt;br&gt; &lt;br&gt;Brytningen ger dig även möjlighet att tjäna lite SevaBit. Din dator letar då efter lösningar för block genom att skapa hashar. Om du hittar ett block får du motsvarande blockersättning. Lycka till!</translation>
+        <translation type="vanished">Brytning med din dator hjälper till att stärka Sevabits nätverk. Ju fler som bryter desto svårare blir det att angripa nätverket, och varje litet bidrag hjälper till.&lt;br&gt; &lt;br&gt;Brytningen ger dig även möjlighet att tjäna lite SevaBit. Din dator letar då efter lösningar för block genom att skapa hashar. Om du hittar ett block får du motsvarande blockersättning. Lycka till!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="82"/>
         <source>Mining with your computer helps strengthen the SevaBit network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some SevaBit. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Utvinning med din dator hjälper till att stärka Lokis nätverk. Ju fler som utvinner desto svårare blir det att angripa nätverket, och varje litet bidrag hjälper till.&lt;br&gt; &lt;br&gt;Utvinningen ger dig även möjlighet att tjäna lite SevaBit. Din dator letar då efter lösningar för block genom att skapa hashar. Om du hittar ett block får du motsvarande blockersättning. Lycka till!</translation>
+        <translation>Utvinning med din dator hjälper till att stärka Sevabits nätverk. Ju fler som utvinner desto svårare blir det att angripa nätverket, och varje litet bidrag hjälper till.&lt;br&gt; &lt;br&gt;Utvinningen ger dig även möjlighet att tjäna lite SevaBit. Din dator letar då efter lösningar för block genom att skapa hashar. Om du hittar ett block får du motsvarande blockersättning. Lycka till!</translation>
     </message>
     <message>
         <source>CPU threads</source>
@@ -1781,7 +1781,7 @@ Den gamla plånbokens cachefil döps om och kan återställas senare.
     <message>
         <location filename="../pages/SharedRingDB.qml" line="97"/>
         <source>This page allows you to interact with the shared ring database. This database is meant for use by SevaBit wallets as well as wallets from SevaBit clones which reuse the SevaBit keys.</source>
-        <translation>Denna sida låter dig interagera med den delade ringdatabasen. Denna databas är avsedd att användas av både SevaBit-plånböcker, och plånböcker för SevaBit-kloner som återanvänder Lokis nycklar.</translation>
+        <translation>Denna sida låter dig interagera med den delade ringdatabasen. Denna databas är avsedd att användas av både SevaBit-plånböcker, och plånböcker för SevaBit-kloner som återanvänder Sevabits nycklar.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="119"/>
@@ -1869,7 +1869,7 @@ Den gamla plånbokens cachefil döps om och kan återställas senare.
     <message>
         <location filename="../pages/SharedRingDB.qml" line="245"/>
         <source>In order to avoid nullifying the protection afforded by SevaBit&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing SevaBit clone allows you do spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by SevaBit and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing SevaBit clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your SevaBit safely.&lt;br&gt;If you do not use a key-reusing SevaBit clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>För att undvika att upphäva det skydd som Lokis ringsignaturer tillhandahåller får en och samma utgång inte spenderas med olika ringar på olika blockkedjor. Även om detta normalt sett inte är något problem kan det bli det när en SevaBit-klon som återanvänder nycklar tillåter att du spenderar existerande utgångar. I detta fall måste du se till att denna existerande utgång använder samma ring på båda kedjorna.&lt;br&gt;Detta görs automatiskt av SevaBit och all programvara som återanvänder nycklar men inte avsiktligt försöker ta ifrån dig din integritet.&lt;br&gt;Om du även använder en SevaBit-klon som återanvänder nycklar, och denna klon inte inkluderar detta skydd, kan du ändå se till att dina transaktioner är skyddade genom att först spendera på klonen och sedan manuellt lägga till ringen på denna sida. Därefter kan du spendera dina SevaBit på ett säkert sätt.&lt;br&gt;Om du inte använder en SevaBit-klon som saknar dessa säkerhetsfunktioner men som ändå återanvänder nycklar, så behöver du inte göra något eftersom det sker helt automatiskt.&lt;br&gt;</translation>
+        <translation>För att undvika att upphäva det skydd som Sevabits ringsignaturer tillhandahåller får en och samma utgång inte spenderas med olika ringar på olika blockkedjor. Även om detta normalt sett inte är något problem kan det bli det när en SevaBit-klon som återanvänder nycklar tillåter att du spenderar existerande utgångar. I detta fall måste du se till att denna existerande utgång använder samma ring på båda kedjorna.&lt;br&gt;Detta görs automatiskt av SevaBit och all programvara som återanvänder nycklar men inte avsiktligt försöker ta ifrån dig din integritet.&lt;br&gt;Om du även använder en SevaBit-klon som återanvänder nycklar, och denna klon inte inkluderar detta skydd, kan du ändå se till att dina transaktioner är skyddade genom att först spendera på klonen och sedan manuellt lägga till ringen på denna sida. Därefter kan du spendera dina SevaBit på ett säkert sätt.&lt;br&gt;Om du inte använder en SevaBit-klon som saknar dessa säkerhetsfunktioner men som ändå återanvänder nycklar, så behöver du inte göra något eftersom det sker helt automatiskt.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="267"/>
@@ -2638,7 +2638,7 @@ I fallet med spenderbevis behöver du inte ange mottagaradressen.</translation>
     </message>
     <message>
         <source>Kickstart the SevaBit blockchain?</source>
-        <translation type="vanished">Kickstarta Lokis blockkedja?</translation>
+        <translation type="vanished">Kickstarta Sevabits blockkedja?</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="80"/>
@@ -2672,7 +2672,7 @@ I fallet med spenderbevis behöver du inte ange mottagaradressen.</translation>
     </message>
     <message>
         <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular SevaBit instance. However, storing the full blockchain is beneficial to the security of the SevaBit network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
-        <translation type="vanished">Disksparläge använder väsentligen mindre diskutrymme, men utnyttjar samma bandbredd som en vanlig SevaBit-instans. Att spara hela blockkedjan förbättrar säkerheten för hela Lokis nätverk. Om du använder en enhet med begränsat diskutrymme så passar detta alternativ för dig.</translation>
+        <translation type="vanished">Disksparläge använder väsentligen mindre diskutrymme, men utnyttjar samma bandbredd som en vanlig SevaBit-instans. Att spara hela blockkedjan förbättrar säkerheten för hela Sevabits nätverk. Om du använder en enhet med begränsat diskutrymme så passar detta alternativ för dig.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="154"/>
@@ -2682,7 +2682,7 @@ I fallet med spenderbevis behöver du inte ange mottagaradressen.</translation>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="169"/>
         <source>Mining secures the SevaBit network, and also pays a small reward for the work done. This option will let SevaBit mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Utvinningen säkrar Lokis nätverk, och betalar även en liten ersättning för det arbete som utförs. Detta alternativ låter SevaBit utvinna när din dator är nätansluten men inaktiv. Utvinningen stoppas när du fortsätter att arbeta igen.</translation>
+        <translation>Utvinningen säkrar Sevabits nätverk, och betalar även en liten ersättning för det arbete som utförs. Detta alternativ låter SevaBit utvinna när din dator är nätansluten men inaktiv. Utvinningen stoppas när du fortsätter att arbeta igen.</translation>
     </message>
 </context>
 <context>
@@ -2717,7 +2717,7 @@ I fallet med spenderbevis behöver du inte ange mottagaradressen.</translation>
     <name>WizardDaemonSettings</name>
     <message>
         <source>To be able to communicate with the SevaBit network your wallet needs to be connected to a SevaBit node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation type="vanished">Plånboken måste vara ansluten till en SevaBit-nod för att för att kunna kommunicera med Lokis nätverk. För högsta sekretess rekommenderas att du kör din egen nod.                         &lt;br&gt;&lt;br&gt;                         Om du inte har möjlighet att köra din egen nod finns alternativet att ansluta till en fjärrnod.</translation>
+        <translation type="vanished">Plånboken måste vara ansluten till en SevaBit-nod för att för att kunna kommunicera med Sevabits nätverk. För högsta sekretess rekommenderas att du kör din egen nod.                         &lt;br&gt;&lt;br&gt;                         Om du inte har möjlighet att köra din egen nod finns alternativet att ansluta till en fjärrnod.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="113"/>
@@ -2802,7 +2802,7 @@ I fallet med spenderbevis behöver du inte ange mottagaradressen.</translation>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="190"/>
         <source>Mining secures the SevaBit network, and also pays a small reward for the work done. This option will let SevaBit mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Utvinningen säkrar Lokis nätverk, och betalar även en liten ersättning för det arbete som utförs. Detta alternativ låter SevaBit utvinna när din dator är nätansluten men inaktiv. Utvinningen stoppas när du fortsätter att arbeta igen.</translation>
+        <translation>Utvinningen säkrar Sevabits nätverk, och betalar även en liten ersättning för det arbete som utförs. Detta alternativ låter SevaBit utvinna när din dator är nätansluten men inaktiv. Utvinningen stoppas när du fortsätter att arbeta igen.</translation>
     </message>
 </context>
 <context>

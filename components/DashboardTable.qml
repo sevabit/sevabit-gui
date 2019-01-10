@@ -28,7 +28,7 @@
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import QtQuick 2.0
-import LokiComponents.Clipboard 1.0
+import SevabitComponents.Clipboard 1.0
 
 ListView {
     id: listView

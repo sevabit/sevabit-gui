@@ -1391,7 +1391,7 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <source>Embedded SevaBit version: </source>
-        <translation type="vanished">内嵌Loki版本: </translation>
+        <translation type="vanished">内嵌Sevabit版本: </translation>
     </message>
     <message>
         <source>Wallet creation height: </source>
@@ -1715,12 +1715,12 @@ The old wallet cache file will be renamed and can be restored later.
     <message>
         <location filename="../pages/SharedRingDB.qml" line="245"/>
         <source>In order to avoid nullifying the protection afforded by SevaBit&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing SevaBit clone allows you do spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by SevaBit and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing SevaBit clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your SevaBit safely.&lt;br&gt;If you do not use a key-reusing SevaBit clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>为了避免Loki环签名提供的保护无效, 同一个输出不应该在不同的区块链上使用不同的环签名来支付.  虽然这通常不是一个问题, 但是当复制了 SevaBit 密钥的克隆钱包允许您支付到现有输出时, 它可以成为一个问题.  在这种情况下, 您需要确保这些现有输出在两条链上都使用相同的环签名. &lt;br&gt;这将由Loki和任何不想破坏您隐私权的密钥重用软件自动完成.  &lt;br&gt; 如果您同时在使用复制了 SevaBit 密钥的克隆钱包, 并且不包含这种保护, 您仍然可以通过在它之上新的交易来确保您的交易安全, 然后在此页面上手动添加环签名, 从而使您安全地使用Loki. &lt;br&gt;如果您没有使用无此安全功能的克隆钱包, 那么您不需要做任何事情, 因为所有都是自动的.&lt;br&gt;</translation>
+        <translation>为了避免Sevabit环签名提供的保护无效, 同一个输出不应该在不同的区块链上使用不同的环签名来支付.  虽然这通常不是一个问题, 但是当复制了 SevaBit 密钥的克隆钱包允许您支付到现有输出时, 它可以成为一个问题.  在这种情况下, 您需要确保这些现有输出在两条链上都使用相同的环签名. &lt;br&gt;这将由Sevabit和任何不想破坏您隐私权的密钥重用软件自动完成.  &lt;br&gt; 如果您同时在使用复制了 SevaBit 密钥的克隆钱包, 并且不包含这种保护, 您仍然可以通过在它之上新的交易来确保您的交易安全, 然后在此页面上手动添加环签名, 从而使您安全地使用Sevabit. &lt;br&gt;如果您没有使用无此安全功能的克隆钱包, 那么您不需要做任何事情, 因为所有都是自动的.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="267"/>
         <source>This records rings used by outputs spent on SevaBit on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>这个环签名已在密钥重用的Loki链上使用过, 因此重复使用同一个环签名可以避免隐私问题. </translation>
+        <translation>这个环签名已在密钥重用的Sevabit链上使用过, 因此重复使用同一个环签名可以避免隐私问题. </translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="296"/>
@@ -2562,7 +2562,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="114"/>
         <source>To be able to communicate with the SevaBit network your wallet needs to be connected to a SevaBit node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>为了能与Loki网络进行通讯, 您的钱包需要连接上一个Loki节点. 为了获得最好的隐私, 我们建议您运行一个自己的节点 &lt;br&gt;&lt;br&gt; 如果您无法运行自己的节点, 可以选择连上一个远程的节点. </translation>
+        <translation>为了能与Sevabit网络进行通讯, 您的钱包需要连接上一个Sevabit节点. 为了获得最好的隐私, 我们建议您运行一个自己的节点 &lt;br&gt;&lt;br&gt; 如果您无法运行自己的节点, 可以选择连上一个远程的节点. </translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="125"/>
@@ -2604,7 +2604,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardDonation.qml" line="93"/>
         <source>SevaBit development is solely supported by donations</source>
-        <translation>Loki的开发完全由捐赠所支持</translation>
+        <translation>Sevabit的开发完全由捐赠所支持</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="94"/>
@@ -2614,7 +2614,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardDonation.qml" line="114"/>
         <source>Enable auto-donations of?</source>
-        <translation>激活自动捐赠给Loki的开发团队?</translation>
+        <translation>激活自动捐赠给Sevabit的开发团队?</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="152"/>
@@ -3205,7 +3205,7 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="788"/>
         <source>SevaBit sent successfully: %1 transaction(s) </source>
-        <translation>Loki转账已成功: %1 个交易</translation>
+        <translation>Sevabit转账已成功: %1 个交易</translation>
     </message>
     <message>
         <location filename="../main.qml" line="827"/>
@@ -3233,7 +3233,7 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="862"/>
         <source>This address received %1 sevabit, with %2 confirmation(s).</source>
-        <translation>这个地址接收了 %1 个loki, 并通过 %2 次的确认. </translation>
+        <translation>这个地址接收了 %1 个sevabit, 并通过 %2 次的确认. </translation>
     </message>
     <message>
         <location filename="../main.qml" line="868"/>
@@ -3364,7 +3364,7 @@ Description: </source>
     <message>
         <location filename="../main.qml" line="859"/>
         <source>This address received %1 sevabit, but the transaction is not yet mined</source>
-        <translation>这个地址将收到 %1 个loki币, 但这笔交易尚未被矿工确认</translation>
+        <translation>这个地址将收到 %1 个sevabit币, 但这笔交易尚未被矿工确认</translation>
     </message>
     <message>
         <location filename="../main.qml" line="861"/>

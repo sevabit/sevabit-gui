@@ -62,7 +62,7 @@ ColumnLayout {
     property var pages: paths[currentPath]
 
     signal wizardRestarted();
-    signal useLokiClicked()
+    signal useSevabitClicked()
     signal openWalletFromFileClicked()
 
     function restart(){
@@ -187,7 +187,7 @@ ColumnLayout {
 
     function walletPathValid(path){
         if(isIOS)
-            path = lokiAccountsDir + path;
+            path = sevabitAccountsDir + path;
         if (walletManager.walletExists(path)) {
             walletErrorDialog.text = qsTr("A wallet with same name already exists. Please change wallet name") + translationManager.emptyString;
             walletErrorDialog.open();
@@ -210,8 +210,8 @@ ColumnLayout {
         // Save wallet files in user specified location
         var new_wallet_filename = createWalletPath(settings.wallet_path,settings.account_name)
         if(isIOS) {
-            console.log("saving in ios: "+ lokiAccountsDir + new_wallet_filename)
-            m_wallet.store(lokiAccountsDir + new_wallet_filename);
+            console.log("saving in ios: "+ sevabitAccountsDir + new_wallet_filename)
+            m_wallet.store(sevabitAccountsDir + new_wallet_filename);
         } else {
             console.log("saving in wizard: "+ new_wallet_filename)
             m_wallet.store(new_wallet_filename);
@@ -385,7 +385,7 @@ ColumnLayout {
         visible: parent.paths[currentPath][currentPage] === finishPage
         onClicked: {
             wizard.applySettings();
-            wizard.useLokiClicked();
+            wizard.useSevabitClicked();
         }
     }
 

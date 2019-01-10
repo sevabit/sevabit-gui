@@ -29,7 +29,7 @@
 
 import QtQuick 2.0
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 
 Label {
     id: item
@@ -41,8 +41,8 @@ Label {
         anchors.left: parent.left
         anchors.right: parent.right
         height: 2
-        color: LokiComponents.Style.dividerColor
-        opacity: LokiComponents.Style.dividerOpacity
+        color: SevabitComponents.Style.dividerColor
+        opacity: SevabitComponents.Style.dividerOpacity
     }
 
     MouseArea {

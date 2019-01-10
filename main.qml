@@ -34,9 +34,9 @@ import QtQuick.Controls.Styles 1.1
 import QtQuick.Dialogs 1.2
 import Qt.labs.settings 1.0
 
-import LokiComponents.Wallet 1.0
-import LokiComponents.PendingTransaction 1.0
-import LokiComponents.NetworkType 1.0
+import SevabitComponents.Wallet 1.0
+import SevabitComponents.PendingTransaction 1.0
+import SevabitComponents.NetworkType 1.0
 
 
 import "components"
@@ -1597,7 +1597,7 @@ ApplicationWindow {
         WizardMain {
             id: wizard
             anchors.fill: parent
-            onUseLokiClicked: {
+            onUseSevabitClicked: {
                 rootItem.state = "normal" // TODO: listen for this state change in appWindow;
                 appWindow.initialize();
             }
@@ -1661,7 +1661,7 @@ ApplicationWindow {
             showMinimizeButton: true
             showMaximizeButton: true
             showWhatIsButton: false
-            showLokiLogo: true
+            showSevabitLogo: true
             onCloseClicked: appWindow.close();
             onMaximizeClicked: {
                 appWindow.visibility = appWindow.visibility !== Window.Maximized ? Window.Maximized :

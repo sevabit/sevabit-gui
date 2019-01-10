@@ -34,7 +34,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Window 2.2
 
-import "../components" as LokiComponents
+import "../components" as SevabitComponents
 import "../js/Windows.js" as Windows
 import "../js/Utils.js" as Utils
 
@@ -105,8 +105,8 @@ Window {
                     anchors.fill: parent
                     font.family: "Arial"
                     font.pixelSize: 14 * scaleRatio
-                    color: LokiComponents.Style.defaultFontColor
-                    selectionColor: LokiComponents.Style.dimmedFontColor
+                    color: SevabitComponents.Style.defaultFontColor
+                    selectionColor: SevabitComponents.Style.dimmedFontColor
                     wrapMode: TextEdit.Wrap
                     readOnly: true
                     background: Rectangle {
@@ -172,7 +172,7 @@ Window {
         RowLayout {
             Layout.fillWidth: true
 
-            LokiComponents.LineEdit {
+            SevabitComponents.LineEdit {
                 id: sendCommandText
                 Layout.fillWidth: true
                 placeholderText: qsTr("Command + Enter (e.g Help)") + translationManager.emptyString

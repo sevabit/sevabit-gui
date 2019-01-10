@@ -883,12 +883,12 @@
     <message>
         <location filename="../pages/Receive.qml" line="138"/>
         <source>With more SevaBit</source>
-        <translation>Több lokival</translation>
+        <translation>Több sevabitval</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="139"/>
         <source>With not enough SevaBit</source>
-        <translation>Nem elég lokival</translation>
+        <translation>Nem elég sevabitval</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="142"/>
