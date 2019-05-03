@@ -1,5 +1,8 @@
 #!/bin/bash
-SEVABIT_URL=https://gitlab.com/Sevabit/SevaBit.git
+
+set -e
+
+SEVABIT_URL=https://github.com/sevabit/sevabit.git
 
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -10,42 +13,14 @@ INSTALL_DIR=$ROOT_DIR/wallet
 SEVABIT_DIR=$ROOT_DIR/sevabit
 BUILD_LIBWALLET=false
 
-# init and update sevabit submodule
-if [ ! -d $SEVABIT_DIR/src ]; then
-    git submodule init sevabit
-fi
-git submodule update --remote
-# git -C $SEVABIT_DIR fetch
-git -C $SEVABIT_DIR checkout master
+git submodule update --init
+git -C $SEVABIT_DIR submodule update --init
 
 # get sevabit core tag
+pushd $SEVABIT_DIR
+git fetch --tags --force
 get_tag
-# create local sevabit branch
-git -C $SEVABIT_DIR checkout -B $VERSIONTAG
-
-git -C $SEVABIT_DIR submodule init
-git -C $SEVABIT_DIR submodule update
-
-# Merge sevabit PR dependencies
-
-# Workaround for git username requirements
-# Save current user settings and revert back when we are done with merging PR's
-OLD_GIT_USER=$(git -C $SEVABIT_DIR config --local user.name)
-OLD_GIT_EMAIL=$(git -C $SEVABIT_DIR config --local user.email)
-git -C $SEVABIT_DIR config user.name "SevaBit GUI"
-git -C $SEVABIT_DIR config user.email "gui@sevabit.local"
-# check for PR requirements in most recent commit message (i.e requires #xxxx)
-for PR in $(git log --format=%B -n 1 | grep -io "requires #[0-9]*" | sed 's/[^0-9]*//g'); do
-    echo "Merging sevabit push request #$PR"
-    # fetch pull request and merge
-    git -C $SEVABIT_DIR fetch origin pull/$PR/head:PR-$PR
-    git -C $SEVABIT_DIR merge --quiet PR-$PR  -m "Merge sevabit PR #$PR"
-    BUILD_LIBWALLET=true
-done
-
-# revert back to old git config
-$(git -C $SEVABIT_DIR config user.name "$OLD_GIT_USER")
-$(git -C $SEVABIT_DIR config user.email "$OLD_GIT_EMAIL")
+popd
 
 # Build libwallet if it doesnt exist
 if [ ! -f $SEVABIT_DIR/lib/libwallet_merged.a ]; then 
@@ -75,7 +50,7 @@ fi
 
 if [ "$BUILD_LIBWALLET" != true ]; then
     # exit this script
-    return
+    exit
 fi
 
 echo "GUI_SEVABIT_VERSION=\"$VERSIONTAG\"" > $SEVABIT_DIR/version.sh
@@ -138,8 +113,7 @@ env | sort
 if [ "$platform" == "darwin" ]; then
     echo "Configuring build for MacOS.."
     if [ "$STATIC" == true ]; then
-        # cmake -D CMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE -D STATIC=ON -D ARCH="x86-64" -D BUILD_64=ON -D BUILD_GUI_DEPS=ON -D INSTALL_VENDORED_LIBUNBOUND=ON -D CMAKE_INSTALL_PREFIX="$SEVABIT_DIR"  ../..
-        cmake -D CMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE -D STATIC=ON -D ARCH="x86-64" -D BUILD_64=ON -D BUILD_GUI_DEPS=ON -D INSTALL_VENDORED_LIBUNBOUND=ON -D CMAKE_PREFIX_PATH="$OPENSSL_ROOT_DIR" -D CMAKE_INSTALL_PREFIX="$SEVABIT_DIR" -D ZMQ_LIB=$ZMQ_LIBRARY -D Termcap_LIBRARY=$Termcap_LIBRARY -D Readline_ROOT_DIR=$Readline_ROOT_DIR -D ZMQ_INCLUDE_PATH=$ZMQ_INCLUDE_PATH ../.. -D PCSC_LIBRARY=$PCSC_LIBRARY -D PCSC_INCLUDE_DIR=$PCSC_INCLUDE_DIR
+        cmake -D CMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE -D STATIC=ON -D ARCH="x86-64" -D BUILD_64=ON -D BUILD_GUI_DEPS=ON -D INSTALL_VENDORED_LIBUNBOUND=ON -D CMAKE_INSTALL_PREFIX="$SEVABIT_DIR"  ../..
     else
         cmake -D CMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE  -D BUILD_GUI_DEPS=ON -D INSTALL_VENDORED_LIBUNBOUND=ON -D CMAKE_INSTALL_PREFIX="$SEVABIT_DIR"  ../..
     fi
@@ -151,7 +125,7 @@ elif [ "$platform" == "linux64" ]; then
         echo "Configuring build for Android on Linux host"
         cmake -D CMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE -D STATIC=ON -D ARCH="armv7-a" -D ANDROID=true -D BUILD_GUI_DEPS=ON -D USE_LTO=OFF -D INSTALL_VENDORED_LIBUNBOUND=ON -D CMAKE_INSTALL_PREFIX="$SEVABIT_DIR"  ../..
     elif [ "$STATIC" == true ]; then
-        cmake -D CMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE -D STATIC=ON -D ARCH="x86-64" -D BUILD_64=ON -D BUILD_GUI_DEPS=ON -D INSTALL_VENDORED_LIBUNBOUND=ON -D CMAKE_INSTALL_PREFIX="$SEVABIT_DIR" -D CMAKE_PREFIX_PATH=$OPENSSL_ROOT_DIR -D PCSC_LIBRARY=$PCSC_LIBRARY -D PCSC_INCLUDE_DIR=$PCSC_INCLUDE_DIR -D Termcap_LIBRARY=$Termcap_LIBRARY -D Readline_ROOT_DIR=$Readline_ROOT_DIR -D ZMQ_LIB=$ZMQ_LIBRARY -D ZMQ_INCLUDE_PATH=$ZMQ_INCLUDE_PATH ../..
+        cmake -D CMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE -D STATIC=ON -D ARCH="x86-64" -D BUILD_64=ON -D BUILD_GUI_DEPS=ON -D INSTALL_VENDORED_LIBUNBOUND=ON -D CMAKE_INSTALL_PREFIX="$SEVABIT_DIR" ../..
     else
         cmake -D CMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE -D BUILD_GUI_DEPS=ON -D CMAKE_INSTALL_PREFIX="$SEVABIT_DIR"  ../..
     fi
@@ -239,12 +213,13 @@ eval make -C $SEVABIT_DIR/build/$BUILD_TYPE/external/easylogging++ all install
 eval make -C $SEVABIT_DIR/build/$BUILD_TYPE/external/db_drivers/liblmdb all install
 
 # Install libunbound
-echo "Installing libunbound..."
-pushd $SEVABIT_DIR/build/$BUILD_TYPE/external/unbound
-# no need to make, it was already built as dependency for libwallet
-# make -j$CPU_CORE_COUNT
-$make_exec install -j$CPU_CORE_COUNT
-popd
-
+if [ -d $SEVABIT_DIR/build/$BUILD_TYPE/external/unbound ]; then
+    echo "Installing libunbound..."
+    pushd $SEVABIT_DIR/build/$BUILD_TYPE/external/unbound
+    # no need to make, it was already built as dependency for libwallet
+    # make -j$CPU_CORE_COUNT
+    $make_exec install -j$CPU_CORE_COUNT
+    popd
+fi
 
 popd

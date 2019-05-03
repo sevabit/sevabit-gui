@@ -59,7 +59,7 @@ Rectangle {
     property Receive receiveView: Receive { }
     property TxKey txkeyView: TxKey { }
     property SharedRingDB sharedringdbView: SharedRingDB { }
-    property ServiceNode serviceNodeView: ServiceNode { }
+    property SuperNode superNodeView: SuperNode { }
     property History historyView: History { }
     property Sign signView: Sign { }
     property Settings settingsView: Settings { }
@@ -130,8 +130,8 @@ Rectangle {
                PropertyChanges { target: root; currentView: txkeyView }
                PropertyChanges { target: mainFlickable; contentHeight: 1200 * scaleRatio  }
             }, State {
-               name: "ServiceNode"
-               PropertyChanges { target: root; currentView: serviceNodeView }
+               name: "SuperNode"
+               PropertyChanges { target: root; currentView: superNodeView }
                PropertyChanges { target: mainFlickable; contentHeight: 1200 * scaleRatio  }
             }, State {
                name: "SharedRingDB"

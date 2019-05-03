@@ -141,8 +141,8 @@ ApplicationWindow {
             else if(middlePanel.state === "Receive") middlePanel.state = "History"
             else if(middlePanel.state === "History") middlePanel.state = "Mining"
             else if(middlePanel.state === "Mining") middlePanel.state = "TxKey"
-            else if(middlePanel.state === "TxKey") middlePanel.state = "ServiceNode"
-            else if(middlePanel.state === "ServiceNode") middlePanel.state = "SharedRingDB"
+            else if(middlePanel.state === "TxKey") middlePanel.state = "SuperNode"
+            else if(middlePanel.state === "SuperNode") middlePanel.state = "SharedRingDB"
             else if(middlePanel.state === "SharedRingDB") middlePanel.state = "Sign"
             else if(middlePanel.state === "Sign") middlePanel.state = "Settings"
         } else if(seq === "Ctrl+Shift+Backtab" || seq === "Alt+Shift+Backtab") {
@@ -160,8 +160,8 @@ ApplicationWindow {
             */
             if(middlePanel.state === "Settings") middlePanel.state = "Sign"
             else if(middlePanel.state === "Sign") middlePanel.state = "SharedRingDB"
-            else if(middlePanel.state === "SharedRingDB") middlePanel.state = "ServiceNode"
-            else if(middlePanel.state === "ServiceNode") middlePanel.state = "TxKey"
+            else if(middlePanel.state === "SharedRingDB") middlePanel.state = "SuperNode"
+            else if(middlePanel.state === "SuperNode") middlePanel.state = "TxKey"
             else if(middlePanel.state === "TxKey") middlePanel.state = "Mining"
             else if(middlePanel.state === "Mining") middlePanel.state = "History"
             else if(middlePanel.state === "History") middlePanel.state = "Receive"
@@ -331,6 +331,7 @@ ApplicationWindow {
         currentWallet.unconfirmedMoneyReceived.connect(onWalletUnconfirmedMoneyReceived)
         currentWallet.transactionCreated.connect(onTransactionCreated)
         currentWallet.stakeTxCreated.connect(onStakeTxCreated)
+		currentWallet.stakeError.connect(onStakeError) 
         currentWallet.connectionStatusChanged.connect(onWalletConnectionStatusChanged)
         middlePanel.paymentClicked.connect(handlePayment);
         middlePanel.sweepUnmixableClicked.connect(handleSweepUnmixable);
@@ -689,7 +690,13 @@ ApplicationWindow {
 
     }
 
+    function onStakeError(error) { 
+        informationPopup.title  = qsTr("Error") + translationManager.emptyString; 
+        informationPopup.text = error; 
+        informationPopup.open(); 
+    } 
 
+	
     // called on "transfer"
     function handlePayment(address, paymentId, amount, mixinCount, priority, description, createFile) {
         console.log("Creating transaction: ")
@@ -1409,8 +1416,8 @@ ApplicationWindow {
                 updateBalance();
             }
 
-            onServiceNodeClicked: {
-                middlePanel.state = "ServiceNode";
+            onSuperNodeClicked: {
+                middlePanel.state = "SuperNode";
                 middlePanel.flickable.contentY = 0;
                 if(isMobile) {
                     hideMenu();

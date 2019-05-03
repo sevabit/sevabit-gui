@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 BUILD_TYPE=$1
 source ./utils.sh
 platform=$(get_platform)
@@ -23,6 +25,11 @@ find_command() {
     done
     return 1
 }
+
+if ! QMAKE=$(find_command qmake qmake-qt5); then
+    echo "Failed to find suitable qmake command."
+    exit 1
+fi
 
 if [ "$BUILD_TYPE" == "release" ]; then
     echo "Building release"
@@ -97,27 +104,29 @@ elif [ "$platform" == "mingw64" ] || [ "$platform" == "mingw32" ]; then
 fi
 
 # force version update
+git fetch --tags --force
 get_tag
 echo "var GUI_VERSION = \"$TAGNAME\"" > version.js
+
 pushd "$SEVABIT_DIR"
 get_tag
 popd
 echo "var GUI_SEVABIT_VERSION = \"$TAGNAME\"" >> version.js
 
 cd build
-if ! QMAKE=$(find_command qmake qmake-qt5); then
-    echo "Failed to find suitable qmake command."
-    exit 1
-fi
 $QMAKE ../sevabit-wallet-gui.pro "$CONFIG" || exit
-$MAKE -j2 || exit 
+$MAKE || exit 
 
 # Copy sevabitd to bin folder
 if [ "$platform" != "mingw32" ] && [ "$ANDROID" != true ]; then
 cp ../$SEVABIT_DIR/bin/$SEVABITD_EXEC $BIN_PATH
 fi
 
-make -j2 deploy
+make deploy
 popd
 
 cp sevabit_default_settings.ini build/$BIN_PATH/sevabit.ini
+
+if [ "$platform" == "darwin" ]; then
+    otool -l build/$BIN_PATH/sevabit-wallet-gui | grep sdk
+fi

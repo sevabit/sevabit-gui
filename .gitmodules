@@ -1,3 +1,4 @@
-[submodule "SevaBit"]
-	path = sevaBit
-	url = https://gitlab.com/Sevabit/SevaBit
+[submodule "sevabit"]
+	path = sevabit
+	url = https://github.com/sevabit/sevabit
+	branch = master

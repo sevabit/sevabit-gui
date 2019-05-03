@@ -58,8 +58,8 @@ ListView {
             + translationManager.emptyString;
     }
 
-    function getColorFromRewardType(isServiceNodeReward, isMinerReward) {
-        if (isServiceNodeReward) {
+    function getColorFromRewardType(isSuperNodeReward, isMinerReward) {
+        if (isSuperNodeReward) {
             return "#cccc00";
         } else if (isMinerReward) {
             return "#ff9900";
@@ -165,8 +165,8 @@ ListView {
                 text: {
                   let base = isOut ? qsTr("Sent") : qsTr("Received");
 
-                  if (isServiceNodeReward) {
-                      base += qsTr(" (service node reward)");
+                  if (isSuperNodeReward) {
+                      base += qsTr(" (super node reward)");
                   } else if (isMinerReward) {
                       base += qsTr(" (miner reward)");
                   }
@@ -196,7 +196,7 @@ ListView {
 
                     return _amount + " SEVABIT";
                 }
-                color: isOut ? "white" : getColorFromRewardType(isServiceNodeReward, isMinerReward)
+                color: isOut ? "white" : getColorFromRewardType(isSuperNodeReward, isMinerReward)
             }
 
             Rectangle {

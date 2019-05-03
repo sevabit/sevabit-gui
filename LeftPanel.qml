@@ -53,7 +53,7 @@ Rectangle {
     signal transferClicked()
     signal receiveClicked()
     signal txkeyClicked()
-    signal serviceNodeClicked()
+    signal superNodeClicked()
     signal sharedringdbClicked()
     signal settingsClicked()
     signal addressBookClicked()
@@ -70,7 +70,7 @@ Rectangle {
         else if(pos === "AddressBook") menuColumn.previousButton = addressBookButton
         else if(pos === "Mining") menuColumn.previousButton = miningButton
         else if(pos === "TxKey")  menuColumn.previousButton = txkeyButton
-        else if(pos === "ServiceNode")  menuColumn.previousButton = serviceNodeButton
+        else if(pos === "SuperNode")  menuColumn.previousButton = superNodeButton
         else if(pos === "SharedRingDB")  menuColumn.previousButton = sharedringdbButton
         else if(pos === "Sign") menuColumn.previousButton = signButton
         else if(pos === "Settings") menuColumn.previousButton = settingsButton
@@ -475,19 +475,19 @@ Rectangle {
                 height: 1
             }
 
-            // ------------- Service Node tab ----------------
+            // ------------- Super Node tab ----------------
             MenuButton {
-                id: serviceNodeButton
+                id: superNodeButton
                 anchors.left: parent.left
                 anchors.right: parent.right
-                text: qsTr("Service Node") + translationManager.emptyString
+                text: qsTr("Super Node") + translationManager.emptyString
                 symbol: qsTr("K") + translationManager.emptyString
                 dotColor: "#FFD781"
                 under: advancedButton
                 onClicked: {
                     parent.previousButton.checked = false
-                    parent.previousButton = serviceNodeButton
-                    panel.serviceNodeClicked()
+                    parent.previousButton = superNodeButton
+                    panel.superNodeClicked()
                 }
             }
             Rectangle {
